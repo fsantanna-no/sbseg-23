@@ -111,10 +111,12 @@ in conflicting orders~\cite{p2p.intention,p2p.dvcs}.
 %\emph{"Y is final"} might be sent concurrently, preventing the network to
 %determine as a group its intention as \emph{X} or \emph{Y}.
 %
-Consensus is key to eradicate Sybil attacks~\cite{p2p.sybil}, which are the
-major threat to decentralized applications in general: without consensus, it
-is not possible, \emph{at the protocol level}, to distinguish between correct
-and malicious users in order to satisfy item (iii).
+Consensus is key to distinguish, \emph{at the protocol level}, between correct
+and malicious users, and therefore, satisfy item (iii).
+Without consensus, each client needs local anti-abuse policies, such as SPAM
+filters and blacklists, but which only apply after the fact, when the abusive
+messages have already been flooded in the network.
+%
 %fundamental in collaborative applications, such as open discussion
 %forums, chat rooms, and trading services (e.g., delivery \& auction).
 %Otherwise, they become impractical due to excess and abuse (e.g., SPAM and
@@ -156,22 +158,29 @@ However, Bitcoin and cryptocurrencies in general are not suitable for content
 sharing because
     (i)   they enforce a unique timeline to preserve value and immunity to
           attacks;
-    (ii)  they lean towards concentration of power due to scaling effects; and
-    (iii) they impose an external economic cost to use the protocol.
-These issues threaten our original decentralization goals.
-In particular, a unique timeline implies that all Internet content should be
-subject to the same consensus rules, which neglects all subjectivity that is
-inherent to social content.
+    (ii)  they lean towards concentration of power due to scaling effects;
+    (iii) they impose an external economic cost to use the protocol; and
+    (iv)  they rely exclusively on objective rules to reach consensus.
+%
+These issues threaten our original decentralization goals, and more
+importantly, they renounce subjectivity, which is inherent to content
+moderation.
+%
+For instance, a unique timeline implies that all Internet content should be
+subject to the same consensus rules, while objective rules alone cannot
+distinguish abuse amid content.
 %
 Another limitation of cryptocurrencies is that it is not possible to revoke
 content in the middle of a blockchain, which is inadmissible considering
 illegal content (e.g., hate speech).
+For instance, Bitcoin transactions permanently store arbitrary human-authored
+content~\cite{btc.data}, including harmful texts and images~\cite{btc.content}.
 
-In this work, we adapt the idea of scarce resources to reach consensus, but in
-the context of social content sharing.
+In this work, we adapt the idea of scarce resources to reach consensus and
+eradicate Sybils, but in the context of social content sharing.
 %
-Our first contribution is to recognize the actual published contents as the
-protocol scarce resources, since they require human work.
+Our first contribution is to recognize the actual published contents themselves
+as the scarce resources, since they require human work.
 %
 Work is manifested as new posts, which if approved by others, reward authors
 with reputation tokens, which are used to evaluate other posts with likes and
@@ -179,20 +188,20 @@ dislikes.
 With such \emph{proof-of-authoring} mechanism, token generation is expensive,
 while verification is cheap and made by multiple users.
 %
-Due to decentralization, posts in a timeline form a causal graph with only
-partial order, which we promote to a total order based on the reputation of
-authors.
+Due to decentralization and network partitions, posts in a timeline form a
+causal graph with only partial order, which we promote to a total order based
+on the reputation of authors.
 The consensus order is fundamental to detect conflicting operations, such as
 likes with insufficient reputation (akin to Bitcoin's double spending).
 %
-Our second contribution is to allow that users create diversified forums of
+Our second contribution is to allow users to create diversified forums of
 interest (instead of a singleton blockchain), each counting as an independent
 timeline with its own subjective consensus etiquette.
 %
 Our third contribution is to support content removal without compromising the
 integrity of the decentralized blockchain.
 Users have the power to revoke posts with dislikes, and peers are forced to
-remove payloads, only forwarding associated metadata.
+remove payloads, only forwarding associated blockchain metadata.
 %
 We integrated the proposed consensus algorithm into \FC~\cite{fcs.sbseg20}, a
 practical peer-to-peer content dissemination protocol that provides strong
@@ -213,7 +222,6 @@ In Section~\ref{sec.related}, we compare our system with publish-subscribe
 protocols, federated applications, and fully peer-to-peer systems.
 In Section~\ref{sec.conclusion}, we conclude this work.
 
-\newpage
 \section{The Reputation and Consensus Mechanism}
 \label{sec.design}
 
@@ -226,6 +234,13 @@ identities and SPAM millions of messages into the system.
 For this reason, we propose a reputation system that works together with a
 consensus algorithm to resist Sybil attacks.
 % and make peer-to-peer public forums practical.
+
+\begin{table}
+\centering
+\includegraphics[width=0.75\textwidth]{general.png}
+\caption{General reputation operations in public forums.}
+\label{fig.general}
+\end{table}
 
 We propose a reputation system in which users can spend tokens named \reps to
 post and rate content in the forums:
@@ -244,24 +259,17 @@ system.
 The only way to generate new \reps is to post content that other users approve,
 which demands non-trivial work resistant to automation.%
 \footnote{
-    Note that to some extent work from AI may be indistinguishable from humans,
-    but its frequency and relevance are still subject to human evaluation,
-    which is subjective and evolves over time.
+    Note that to some extent AI content may be indistinguishable from humans,
+    but its frequency and relevance in forums are still subject to human
+    evaluation in our proposal.
 }
-
-\begin{table}
-\centering
-\includegraphics[width=0.75\textwidth]{general.png}
-\caption{General reputation operations in public forums.}
-\label{fig.general}
-\end{table}
 
 Bitcoin employs proof-of-work to mitigate Sybil attacks.
 However, CPU or other extrinsic resources are not evenly distributed among
 humans, specially in communications using battery-powered devices.
 %
-Instead, considering the context of public forums, we can take advantage of the
-human authoring ability as an intrinsic resource.
+Instead, considering the context of public forums, we propose to take advantage
+of the human authoring ability as an intrinsic resource.
 Creating new content is hard and takes time, but is comparatively easy to
 verify and rate.
 Therefore, in order to impose scarcity, we determine that only content
@@ -269,95 +277,106 @@ authoring generates \reps, while likes and dislikes just transfer \reps between
 users.
 %but limited by periods of time to prevent excess (e.g., once in a day per user).
 %Additionally,
-%
-Nevertheless, scarce operations are not yet sufficient because they demand
-consensus to establish an order in time across the network to prevent
-inconsistent operations.
+
+Nevertheless, posts scarcity is not yet sufficient because they still demand a
+consensual order in time across the network to prevent inconsistent operations.
 As an example, consider a malicious author with a single unit of \reps posting
-new messages using multiple peers at the same time.
+SPAM messages from multiple peers at the same time.
 According to the \emph{Expense} rule of Table~\ref{fig.general}, only one of
-these messages should be accepted.
+these messages should be accepted by the network.
 However, without consensus, it is not possible to globally determine which
 message to accept, since each peer would supposedly accept the first message it
-sees.
+receives.
 On the one hand, in order to validate operations consistently, we need the same
 message ordering across all peers in the network.
-On the other hand, we typically can only represent peer-to-peer public forums
-as DAGs with causal relationships between messages, which provides at most
-partial order.
+On the other hand, due to network partitions, we can only represent public
+forums as DAGs with causal relationships between messages, which provides at
+most partial order.
+
+\subsection{Basic Reputation Consensus}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{reps2.png}
+\includegraphics[width=0.9\textwidth]{reps.png}
 \caption{
-    (A) A public forum DAG with a common prefix and two branches.
-    (B) Total order between blocks of the DAG after consensus.
+    (A) A public forum DAG with a common prefix, two branches, and a common sufix.
+    (B) Total order between posts of the DAG after consensus.
 }
 \label{fig.reps}
 \end{figure}
 
-Therefore, our key idea to stablish consensus in forum DAGs is to favor forks
-with posts from users that constitute the majority of the reputation in the
-network.
+Our key idea to stablish consensus in forum DAGs is to favor forks with posts
+from users that constitute the majority of the reputation in the network.
 These forks have more associated work from active users and are analogous to
 longest chains in Bitcoin.
 %
 In technical terms, we can adapt a topological sorting algorithm to favor
 reputation when deciding between branches in a forum DAG.
 
-Figure~\ref{fig.reps}.A illustrates the consensus criteria.
-%, still abstractly, since we did not discuss the actual rules for content creation and rating.
-A public forum DAG has a common prefix with signed posts from users $a$, $b$,
-and $c$.
-Let's assume that within the prefix, users $a$ and $b$ have contributed with
-better content and have more reputation combined than $c$ has alone (i.e.,
-$8+5>3$).
-%
-After the prefix, the forum forks in two branches:
-in \code{branch-1}, only user $c$ remains active and we see that new users $x$
-and $y$ (with no previous reputation in the common prefix) generate a lot of
-new content;
-in \code{branch-2}, only users $a$ and $b$ participate but with less activity.
-Nevertheless, \code{branch-2} would be ordered first in this case because,
-before the forking point, $a$ and $b$ have more reputation than $c$, $x$, and
-$y$ combined.
-%
-User $c$ here might represent a malicious user trying to cultivate fake
-identities $x$ and $y$ in separate of the network during weeks to accumulate
-\reps.
-%However, the whole malicious \code{branch-1} is vulnerable because users in
-%\code{branch-2} with more previous reputation take the priority and can
-%overthrow user $c$.
+Figure~\ref{fig.reps}.A illustrates the evolution of a forum DAG in the
+presence of a network partition:
+A common prefix has signed posts from users $a$, $b$, and $c$, when they were
+still all connected.
+Then, user $c$ disconnects from $a$ and $b$, and evolves in separate along with
+new users $x$ and $y$ with posts in \code{branch-1}.
+In the meantime, $a$ and $b$ participate with posts in \code{branch-2}, but
+with less activity.
+After some time, the partitions reconnect and new posts from $x$, $b$ and $c$
+merge the branches with a common suffix.
 
-Figure~\ref{fig.reps}.B indicates the resulting consensus order between blocks
-in the forum.
-All operations in \code{branch-2} appear before any operation in
-\code{branch-1}.
+Even in the ordinary case of a legit temporary network partition, note that the
+two branches may still show conflicts when merging.
+For instance, posts with dislike operations in one branch could possibly block
+posts from users in the other branch.
+Therefore, we need to order the branches with a global consensus, such that we
+can validate operations consistently across the network.
 %
+Note also that, to reach consensus, we should preferably rely on the maximum
+information that all branches agree on, which is exactly the posts in the
+common prefix.
+
+In Figure~\ref{fig.reps}.A, we assume that within the common prefix, users $a$
+and $b$ have contributed with better content and therefore have more reputation
+combined than $c$ has alone (i.e., $8+5>3$).
+%
+Based on that information, Figure~\ref{fig.reps}.B indicates the resulting
+consensus order between posts in the forum DAG:
+    the common prefix comes first,
+    followed by all posts in \code{branch-2},
+    followed by all posts in \code{branch-1},
+    followed by the common suffix.
+%
+The \code{branch-2} with users $a$ and $b$ take priority over \code{branch-1}
+with user $c$ because, before the forking point, $a$ and $b$ have more
+reputation than $c$, $x$, and $y$ combined.
+
 At any point in the consensus timeline, if an operation fails, all remaining
-blocks in the offending branch are removed from the primary DAG.
+posts in the offending branch are removed from the primary DAG.
 As an example, suppose that the last post by $a$ (in gray) is a dislike to user
 $c$.
 Then, it's possible that the last post by $c$ (in red), now (suppose) with
-\nreps{0}, is rejected together with all posts by $y$ and $x$ in sequence.
+\nreps{0}, is rejected together with all posts in sequence, including those in
+the common suffix.
 %
-The removal rule for the remaining blocks is a direct consequence of tamper
-proof Merkle~DAGs~\cite{p2p.ipfs,p2p.bitcoin} used in permissionless protocols,
-which cannot support graph modifications.
+This rejection rule for remaining posts is a direct consequence of tamper proof
+Merkle~DAGs~\cite{p2p.ipfs,p2p.bitcoin} typically used in permissionless
+protocols, which cannot support graph modifications.
 
-Note that the consensus order exists only for accountability purposes, and is
-a view of the primary DAG structure.
-%
-Note also that users in the branch with more reputation can react to attacks
-even after the fact.
-For instance, users $a$ and $b$ can pretend that they did not yet see
-\code{branch-1} and post extra dislikes to user $c$ from \code{branch-2} so
-that a further merge removes all blocks of \code{branch-1} from the DAG.
-%
+The basic consensus rule is therefore straightforward:
+Whenever a fork is found, we create sets of users with posts in each branch
+($B1=\{c,x,y\}$ and $B2=\{a,b\}$).
+Then, we take each set, and sum its users \reps based on the common prefix
+($S1=3$ and $S2=13$), since it is the maximum information that all branches
+agree.
+Finally, we order the branches from the highest sum of \reps found
+(Figure~\ref{fig.reps}.B).
+While applying the branches in order, if any post operation fails, all
+remaining posts are rejected, as if they never existed.
+
 There are some other relevant considerations about forks and merges:
 %
 Peers that first received branches with less reputation will need to reorder
-all blocks starting at the forking point.
+all posts starting at the forking point.
 This might involve removing content in the end-user software.
 This behavior is similar to Bitcoin's blockchain reorganization, when a peer
 detects a new longest chain. % and disconsiders old blocks.
@@ -365,52 +384,82 @@ detects a new longest chain. % and disconsiders old blocks.
 Likewise, peers that first saw branches with more reputation just need to put
 the other branch in sequence with no reordering at all.
 %and do not need to recompute anything.
-This behavior is expected to happen in the majority of the network.
+This behavior is expected to happen in the majority of the connected network.
 %
 Note that unlike Bitcoin, forks are not only permitted but encouraged due to
 the local-first software principle~\cite{p2p.local}, in which networked
 applications can work locally while offline.
 However, the longer a peer remains disconnected, the more conflicting
-operations it may see, and the higher are the chances of rejection when
+operations it may see, and the higher are the chances of reordering when
 rejoining.
 
-As a counterpoint to the consensus order in Figure~\ref{fig.reps}.B, maybe
-users $a$ and $b$ have abandoned the forum for months, and thus \code{branch-1}
-is actually legit.
+In summary, it is important to remark that
+    (i) branches always introduce conflicts, which
+    (ii) require consensus to order operations, which
+    (iii) is based on reputation of an agreed common prefix,
+    (iv) leading to a global and deterministic and result.
+%
+Note that the consensus order exists only for accountability purposes, and is
+a view of the DAG structure, which remains as the primary source of data.
+
+\subsection{Malicious Behaviors and Hard Forks}
+
+Now, consider a malicious scenario in which user $c$ in Figure~\ref{fig.reps}
+intentionally disconnected from the network for weeks to cultivate fake
+identities $x$ and $y$ and accumulate \reps.
+When merging, these fake users become legit and now constitute the majority of
+the forum in terms of reputation.
+%
+However, because the common prefix is the basis of consensus, users in the
+branch with more reputation can still react even after the attack.
+For instance, users $a$ and $b$ can pretend that they did not yet see
+\code{branch-1} and post extra dislikes to user $c$ from \code{branch-2} before
+the common suffix so that a further merge removes all posts of \code{branch-1}
+from the DAG.
+%
+The example shows that this kind of attack is innocuous because it requires at
+least half of the \reps accumulated in the common prefix.
+%
+The same countermeasure can be used against a minority of users colluding to
+boost or protect their own posts.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{n100-d7.png}
+\caption{
+    Stable consensus permanently freezes the order of posts once they cross
+    the threshold.
+    The unstable order may still be affected by incoming branches.
+}
+\label{fig.hard}
+\end{figure}
+
+As a counterpoint, maybe users $a$ and $b$ have abandoned the forum for months,
+and thus \code{branch-1} is actually legit.
 In this case, users $a$ and $b$ might be the ones trying to take over the
 forum.
 Yet another possibility is that both branches are legit but became disconnected
 for a long period of time.
-In any case, it is unacceptable that a very old remote branch affects a long
-active local forum.
+In any case, it is unacceptable for users that a very old remote branch affects
+a long active forum.
 %
 For this reason, the consensus algorithm includes an extra constraint that
-prevents long-lasting local branches to merge, creating \emph{hard forks} in
-the network.
+prevents long-lasting local branches to merge, which leads to \emph{hard forks}
+in the network.
 A hard fork occurs when a local branch crosses a predetermined and irreversible
 threshold of \emph{7 days} or \emph{100 posts} of activity.
 In this case, regardless of the remote branch reputation, the local branch
 takes priority and is ordered first.
 This situation is analogous to a hard fork in Bitcoin and the branches will
 never synchronize again.
-More than simply numeric disputes, hard forks represent social conflicts in
+More than simple numeric disputes, a hard fork represents a social conflict in
 which reconciling branches is no longer possible.
 %
 Figure~\ref{fig.hard} illustrates hard forks by distinguishing \emph{stable
-consensus}, which cannot be reordered, from \emph{unstable consensus}, which may
-still be affected by incoming branches.
-The activity threshold counts backwards, from the latest local block in the
-unstable consensus.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{n100-d7.png}
-\caption{
-    Stable consensus freezes the order of blocks once they cross the threshold.
-    The unstable order may still be affected by incoming branches.
-}
-\label{fig.hard}
-\end{figure}
+consensus}, which cannot be reordered, from \emph{unstable consensus}, which
+may still be affected by incoming branches.
+The activity threshold counts backwards, starting from the newest local post
+in the unstable consensus to older posts until they are permanently frozen.
 
 In summary, the rules to merge a branch from a remote machine \code{j} into a
 branch from a local machine \code{i} are as follows:
@@ -420,7 +469,7 @@ branch from a local machine \code{i} are as follows:
     \item \code{i} or \code{j} is first, whichever has more reputation in the
           common prefix.
     \item otherwise, branches are ordered by an arbitrary criteria, such as
-          lexicographical order of the block hashes immediately after the
+          lexicographical order of the post hashes immediately after the
           common prefix.
 \end{itemize}
 
@@ -435,6 +484,8 @@ branch from a local machine \code{i} are as follows:
 }
 \label{fig.state}
 \end{figure}
+
+\subsection{Content Removal}
 
 Finally, we consider that revoking posts is fundamental in the context of
 social content publishing, and thus, an important contribution of this work.
@@ -460,14 +511,34 @@ again, since Merkle~DAGs are immutable by design.
 %\emph{like} (Figure~\ref{fig.forum}).
 %
 However, if the number of dislikes exceeds an arbitrary threshold (e.g., more
-dislike than likes), the block becomes \code{REVOKED} and its payload is not
+dislike than likes), the post becomes \code{REVOKED} and its payload is not
 retransmitted to other peers.
-Note that a block hash does not depend on its associated payload, but only on
+Note that a post hash does not depend on its associated payload, but only on
 the payload hash.
 Hence, it is safe to remove the payload as long as one can prove its revoked
 state.
 Later, if the post receives new likes, it means that the payload is still known
 somewhere and peers can request it when synchronizing again.
+
+\subsection{Byzantine Peers}
+
+Since posts are signed and structured in Merkle~DAGs, ~\cite{p2p.ipfs,p2p.bitcoin} used in permissionless
+Regarding Byzantine-faulty peers, which deviate from the protocol
+p2p.byz
+When a node deviates from the specified protocol, we
+call it Byzantine-faulty (or simply Byzantine), regardless of
+whether the deviation is by accident or by malice [25]. Byzan-
+tine behaviour is not always detectable by other nodes, since
+a Byzantine node may attempt to hide its protocol violations.
+
+To conclude this section, we should keep in mind that our consensus algorithm
+is based on subjective evaluations of users and posts.
+For this reason, unlike Bitcoin, in which forks are discouraged and a single
+blockchain must prevail, public forums can split and diverge indiscriminately.
+For instance, users can explicitly apply hard forks at any point in time or
+``reboot'' a community from a previous state.
+Ultimately, the consensus algorithm provides a transparent mechanism to help
+users understand the evolution of public forums and act accordingly.
 
 \section{Public Forums in Freechains}
 \label{sec.freechains}
@@ -566,7 +637,7 @@ and posts a message, which is welcomed with a like signed by the pioneer:
 }
 
 Note that chains with the same name but different pioneers would be
-incompatible because the hash of genesis blocks depend on the pioneers' public
+incompatible because the hash of genesis posts depend on the pioneers' public
 keys.
 
 Figure~\ref{fig.forum} illustrates the chain DAG up to the like operation.
@@ -712,7 +783,7 @@ related to network distribution, which may vary from applications.
 \end{comment}
 
 Evaluation item (a) measures the protocol overhead due to blockchain metadata,
-which consists of a timestamp, author signature, and hashes (block id, payload,
+which consists of a timestamp, author signature, and hashes (post id, payload,
 backlinks, and likes).
 %
 The original chat archive is \texttt{800kB} in size, or \texttt{80B} for each
@@ -736,7 +807,7 @@ chat messages, but decreases as the payload increases.
 
 Evaluation item (b) accounts the consensus algorithm applied locally at each
 chain.
-We measured the time to sort blocks in a local DAG both for the first time
+We measured the time to sort posts in a local DAG both for the first time
 (without any caches), and incrementally (from stable consensus caches).
 %
 For the chat chain, it takes \texttt{125s} and \texttt{50ms} for the initial
@@ -957,7 +1028,7 @@ built on top of them.
 %
 In contrast, as stated in Section~\ref{sec.freechains}, the pubsub of \FC is
 conceptually at the application level and is integrated with the semantics of
-chains, which already verifies blocks at publishing time.
+chains, which already verifies posts at publishing time.
 For instance, to flood the network with posts, malicious peers need to spend
 reputation, which takes hours to recharge (rule~\code{2} in
 Table~\ref{fig.rules}).
