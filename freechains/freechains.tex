@@ -54,6 +54,7 @@ The reputation mechanism depends exclusively on the human authoring ability
 establish consensus.
 \end{abstract}
 
+\begin{comment}
 \begin{resumo} 
 Fórums públicos de Internet sofrem de excesso e abuso, tais como SPAM e
 notícias falsas.
@@ -74,6 +75,7 @@ O mecanismo de reputação depende exclusivamente da habilidade de autoria human
 (\emph{proof-of-authoring}), que é lenta e escassa, e portanto adqueada para
 estabelecer consenso.
 \end{resumo}
+\end{comment}
 
 \section{Introduction}
 \label{sec.introduction}
@@ -142,10 +144,16 @@ consensus even in a local machine.
 %
 Our goal is to provide \emph{multi-user/multi-node consensus} (just
 \emph{consensus}, from now on) in the context of decentralized content sharing.
+
+In this sense, consensus 
+eradicate Sybil, which are the
+major threat to decentralized applications in general.
+The reason
+Furthermore, without consensus, it is not possible,
 \end{comment}
 
 Bitcoin~\cite{p2p.bitcoin} is the first permissionless protocol to resist
-Sybils through consensus.
+Sybil attacks~\cite{p2p.sybil}.
 Its key insight is to rely on a scarce resource---the \emph{proof-of-work}---to
 establish consensus.
 %The protocol maintains a single dispendious timeline consisting of linked
@@ -473,6 +481,17 @@ branch from a local machine \code{i} are as follows:
           common prefix.
 \end{itemize}
 
+To conclude this section, we should keep in mind that our consensus algorithm
+is based on subjective evaluations of users and posts.
+For this reason, unlike Bitcoin, in which forks are discouraged and a single
+blockchain must prevail, public forums can split and diverge indiscriminately.
+For instance, users can explicitly apply hard forks at any point in time or
+``reboot'' a community from a previous state.
+Ultimately, the consensus algorithm provides a transparent mechanism to help
+users understand the evolution of public forums and act accordingly.
+
+\subsection{Content Removal}
+
 \begin{figure}
 \centering
 \includegraphics[width=0.75\textwidth]{state-revoked.png}
@@ -484,8 +503,6 @@ branch from a local machine \code{i} are as follows:
 }
 \label{fig.state}
 \end{figure}
-
-\subsection{Content Removal}
 
 Finally, we consider that revoking posts is fundamental in the context of
 social content publishing, and thus, an important contribution of this work.
@@ -520,25 +537,31 @@ state.
 Later, if the post receives new likes, it means that the payload is still known
 somewhere and peers can request it when synchronizing again.
 
-\subsection{Byzantine Peers}
+\subsection{Synchronization and Byzantine Peers}
 
-Since posts are signed and structured in Merkle~DAGs, ~\cite{p2p.ipfs,p2p.bitcoin} used in permissionless
-Regarding Byzantine-faulty peers, which deviate from the protocol
-p2p.byz
-When a node deviates from the specified protocol, we
-call it Byzantine-faulty (or simply Byzantine), regardless of
-whether the deviation is by accident or by malice [25]. Byzan-
-tine behaviour is not always detectable by other nodes, since
-a Byzantine node may attempt to hide its protocol violations.
+Similarly to Bitcoin, the underlying network protocol replicates on each peer
+the full state of the Merkle-DAG representing the causal relationships between
+the messages.
+When peers synchronize, they mutually synchronize missing branches such that
+they reach the same DAG structure~\cite{p2p.byz}.
+As they synchronize, each peer runs the consensus algorithm locally and
+verifies if all received posts are consistent.
 
-To conclude this section, we should keep in mind that our consensus algorithm
-is based on subjective evaluations of users and posts.
-For this reason, unlike Bitcoin, in which forks are discouraged and a single
-blockchain must prevail, public forums can split and diverge indiscriminately.
-For instance, users can explicitly apply hard forks at any point in time or
-``reboot'' a community from a previous state.
-Ultimately, the consensus algorithm provides a transparent mechanism to help
-users understand the evolution of public forums and act accordingly.
+Because the protocol relies on a tamper-proof DAGs, and because each peer
+self-verifies the posts as they synchronize, the protocol becomes tolerant to
+Byzantine-faulty peers~\cite{lamport.byz}.
+%
+No information coming from any peer is trusted a priori.
+%
+For instance, a malicious peer that tries to synchronize branches with erratic
+data can be detected on the first inconsistent post.
+This allows the correct peer to close the connection immediately and blacklist
+the malicious peer from future connections.
+
+Therefore, although Byzantine peers may still perform some kind of denial of
+service attacks in the network, they cannot modify the DAG structure, create
+new content (without performing work), or impede that two correct nodes
+synchronize directly.
 
 \section{Public Forums in Freechains}
 \label{sec.freechains}
@@ -572,7 +595,7 @@ and operate in the chains.
 We start by creating an identity whose public key is assigned as the pioneer in
 a chain named \emph{forum}:
 
-{\footnotesize
+{\scriptsize
 \begin{verbatim}
  > freechains keys pubpvt 'pioneer-password'
  4B56AD.. DA3B5F..  <-- public and private keys
@@ -596,7 +619,7 @@ example) and indicates the purpose of the chain for future users.
 
 The most basic concern in public forums is to resist Sybils abusing the
 chains.
-Fully peer-to-peer systems cannot rely on logins or {\footnotesize CAPTCHAs}
+Fully peer-to-peer systems cannot rely on logins or {\scriptsize CAPTCHAs}
 due to the lack of a central authority.
 Viable alternatives include (i) building social trust graphs, in which users
 already in the community vouch for new users, or (ii) imposing explicit costs
@@ -621,7 +644,7 @@ the chains.
 In the next sequence of commands, a new remote user joins the same public chain
 and posts a message, which is welcomed with a like signed by the pioneer:
 
-{\footnotesize
+{\scriptsize
 \begin{verbatim}
  > freechains keys pubpvt 'newbie-password'
  503AB5.. 41DDF1..  <-- public and private keys
