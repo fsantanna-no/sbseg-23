@@ -82,7 +82,8 @@ estabelecer consenso.
 
 Content publishing in Internet forums and social media is
 increasingly more centralized in a few companies (e.g. Facebook and
-Twitter)~\cite{internet.fixing,p2p.osn,p2p.dosn}.
+Twitter)~\cite{internet.fixing}.
+%,p2p.osn,p2p.dosn}.
 %These companies benefit from closed protocols and network effects to keep
 %users locked in their platforms.
 On the one hand, these companies offer free storage, friendly user interfaces,
@@ -99,16 +100,16 @@ In an ideal Internet forum, all messages or posts
 (i)   reach all users,
 (ii)  are delivered in a consistent order, and
 (iii) are respectful and on topic.
-In a centralized system, items (i) and (ii) are trivially achieved assuming
-availability and delivery order in the service, while for item (iii), users
-have to trust the service to moderate content.
-In a decentralized setting, however, none of these demands are easily
+In centralized systems, items (i) and (ii) are trivially achieved assuming
+availability and delivery order, while item (iii) assumes that users trust the
+service to moderate content.
+In decentralized systems, however, none of these demands are easily
 accomplished.
-A common approach in gossiping protocols is to proactively replicate and
-disseminate posts among peers until they reach all
-users~\cite{p2p.survey,p2p.byz}.
+A common approach in gossiping protocols is to proactively disseminate posts
+among peers until they reach all users~\cite{p2p.survey,p2p.byz}.
 However, this approach does not guarantee consensus since posts can be received
-in conflicting orders~\cite{p2p.intention,p2p.dvcs}.
+in conflicting orders~\cite{p2p.intention}.
+%,p2p.dvcs}.
 %As an example, antagonistic messages such as \emph{"X is final"} vs
 %\emph{"Y is final"} might be sent concurrently, preventing the network to
 %determine as a group its intention as \emph{X} or \emph{Y}.
@@ -182,7 +183,8 @@ Another limitation of cryptocurrencies is that it is not possible to revoke
 content in the middle of a blockchain, which is inadmissible considering
 illicit content (e.g., hate speech).
 For instance, Bitcoin transactions permanently store arbitrary human-authored
-content~\cite{btc.data}, including harmful texts and images~\cite{btc.content}.
+content, including harmful texts and images~\cite{btc.content}.
+%~\cite{btc.data}
 
 In this work, we adapt the idea of scarce resources to reach consensus and
 eradicate Sybils, but in the context of social content sharing.
@@ -212,9 +214,9 @@ Users have the power to revoke posts with dislikes, and peers are forced to
 remove payloads, only forwarding associated blockchain metadata.
 %
 We integrated the proposed consensus algorithm into \FC~\cite{fcs.sbseg20}, a
-practical peer-to-peer content dissemination protocol that provides strong
-eventual consistency~\cite{p2p.crdts,p2p.sec}.
-%
+practical peer-to-peer (P2P) content dissemination protocol that provides
+strong eventual consistency~\cite{p2p.sec}.
+%p2p.crdts,
 To show the practicability of the consensus mechanism, we simulated months of
 activity of a chat channel and years of a newsgroup forum, both extracted from
 publicly available Internet archives.
@@ -226,16 +228,16 @@ In Section~\ref{sec.freechains}, we describe the concrete reputation rules we
 implemented for \FC and evaluate the performance of the protocol in real-world
 public forums.
 In Section~\ref{sec.related}, we compare our system with publish-subscribe
-protocols, federated applications, and fully peer-to-peer systems.
+protocols, federated applications, and fully P2P systems.
 In Section~\ref{sec.conclusion}, we conclude this work.
 
 \section{The Reputation and Consensus Mechanism}
 \label{sec.design}
 
-In the absence of moderation, permissionless peer-to-peer forums are
-impractical, mostly because of Sybils abusing the system.
+In the absence of moderation, permissionless P2P forums are impractical, mostly
+because of Sybils abusing the system.
 For instance, it should take a few seconds to generate thousands of fake
-identities and SPAM millions of messages into the system.
+identities and SPAM millions of messages.
 %Hence, without moderation, there are no limits on the number and size of posts
 %and no reasonable policy to distinguish quality.
 For this reason, we propose a reputation system that works together with a
@@ -244,7 +246,7 @@ consensus algorithm to resist Sybil attacks.
 
 \begin{table}
 \centering
-\includegraphics[width=0.75\textwidth]{general.png}
+\includegraphics[width=0.65\textwidth]{general.png}
 \caption{General reputation rules in public forums.}
 \label{fig.general}
 \end{table}
@@ -315,9 +317,9 @@ messages, which provides at most partial order.
 \end{figure}
 
 Our key idea to stablish consensus in forum DAGs is to favor forks with posts
-from users that constitute the majority of the reputation in the network.
-These forks have more associated work from active users and are analogous to
-longest chains in Bitcoin.
+from users that constitute the majority of the reputation.
+These forks have more associated work and are analogous to longest chains in
+Bitcoin.
 %
 In technical terms, we adapt a topological sorting algorithm to favor
 reputation when deciding between branches in a forum DAG.
@@ -327,13 +329,13 @@ presence of a network partition:
 A common prefix has signed posts from users $a$, $b$, and $c$, when they were
 still all connected.
 %
-We assume that within the common prefix, users $a$ and $b$ have contributed
-with better content and therefore have more reputation combined than $c$ has
-alone (i.e., $8+5>3$).
-We will use this information when ordering branches in the consensus algorithm.
+We assume that within the prefix, users $a$ and $b$ have contributed with
+better content and therefore have more reputation combined than $c$ has alone
+(i.e., $8+5>3$).
+We will use this fact when ordering branches in the consensus algorithm.
 %
-Then, user $c$ disconnects from $a$ and $b$, and evolves in separate along with
-new users $x$ and $y$ with posts in \code{branch-1}.
+Then, user $c$ disconnects from $a$ and $b$, and evolves with new users $x$ and
+$y$ with posts in \code{branch-1}.
 In the meantime, $a$ and $b$ participate with posts in \code{branch-2}.
 After some time, the partitions reconnect and new posts from $x$, $b$ and $c$
 merge the branches with a common suffix.
@@ -342,21 +344,21 @@ Note that even non-malicious network partitions may experience conflicts when
 merging branches.
 For instance, dislike operations in one branch to common past posts could
 possibly block posts from users in the other branch, depending on how they are
-ordered.
-Therefore, we need to order the branches with a global consensus, such that we
-can validate operations consistently across the network.
+finally ordered.
+Therefore, we need to order branches with a global consensus, such that we can
+validate operations consistently across the network.
 %
 Note also that, to reach consensus, we should preferably rely on the maximum
 information that all branches agree on, which is exactly the posts in the
 common prefix.
 
 Therefore, based on the reputation of users in the common prefix,
-Figure~\ref{fig.reps}.B indicates consensus order between posts in the forum
+Figure~\ref{fig.reps}.B indicates the consensus order between posts in the forum
 DAG:
     the common prefix comes first,
-    followed by all posts in \code{branch-2},
-    followed by all posts in \code{branch-1},
-    followed by the common suffix.
+    then all posts in \code{branch-2},
+    then all posts in \code{branch-1},
+    then the common suffix.
 %
 The \code{branch-2} with users $a$ and $b$ takes priority over \code{branch-1}
 with user $c$ because, before the forking point, $a$ and $b$ have more
@@ -386,14 +388,14 @@ protocols, which cannot support graph modifications.
 
 There are some other relevant considerations about forks and merges:
 %
-Peers that first received branches with less reputation need to reorder all
-posts starting at the forking point.
+Peers that first receive branches with less reputation need to reorder all
+posts after the forking point.
 This might involve removing content in the end-user software.
-This behavior is similar to Bitcoin's blockchain reorganization, when a peer
-detects a new longest chain. % and disconsiders old blocks.
+This behavior is similar to Bitcoin's blockchain reorganization, when peers
+detect new longest chains. % and disconsiders old blocks.
 %
-Likewise, peers that first saw branches with more reputation just need to put
-the other branch in sequence with no reordering at all.
+Likewise, peers that first saw branches with more reputation just need to
+append the other branch, with no reordering at all.
 %and do not need to recompute anything.
 This behavior is expected to happen in the majority of the connected network.
 %
@@ -407,28 +409,27 @@ rejoining.
 In summary, it is important to remark that
     (i) branches always introduce conflicts, which
     (ii) require consensus to order operations, which
-    (iii) is based on reputation of an agreed common prefix,
+    (iii) is based on a common prefix reputation,
     (iv) leading to a global and deterministic result.
 %
-Note that the consensus order exists for reputation accountability purposes,
-and is only a view of the primary DAG structure.
+Note that the consensus order exists only to account reputation and verify
+operations, and is only a view of the primary DAG structure.
 
 \subsection{Malicious Behaviors and Hard Forks}
 \label{sec.design.hard}
 
-Now, consider a malicious scenario in which user $c$ in Figure~\ref{fig.reps}
+Consider a malicious scenario in which user $c$ in Figure~\ref{fig.reps}
 intentionally disconnects from the network for weeks to cultivate fake
-identities $x$ and $y$ and accumulate \reps.
-When merging, these fake users become legitimate and now accumulate the
+identities $x$ and $y$ with the intention to accumulate \reps.
+When merging, these fake users would become legitimate and accumulate the
 majority of \reps in the forum.
 %
 However, this kind of attack is refutable because, since the common prefix is
 the basis of consensus, users in the branch with more reputation can still
 react even a posteriori.
 For instance, users $a$ and $b$ can pretend that they did not yet see
-\code{branch-1} and post extra dislikes to user $c$ in \code{branch-2} so that
-a further merge invalidates all posts from \code{branch-1}, removing them from
-the DAG.
+\code{branch-1} and post extra dislikes to user $c$ so that a further merge
+invalidates all posts from \code{branch-1}, removing them from the DAG.
 %
 This kind of attack is innocuous because it requires at least half of the \reps
 accumulated in the common prefix.
@@ -438,10 +439,9 @@ colluding to boost or protect their own posts.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{n100-d7.png}
+\includegraphics[width=0.85\textwidth]{n100-d7.png}
 \caption{
-    Stable consensus permanently freezes the order of posts once they cross
-    the threshold.
+    Stable consensus freezes the order of posts once they cross the threshold.
     The unstable order may still be affected by incoming branches.
 }
 \label{fig.hard}
@@ -501,7 +501,7 @@ leads to hard forks.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.75\textwidth]{state-revoked.png}
+\includegraphics[width=0.65\textwidth]{state-revoked.png}
 \caption{
     State machine of posts:
     \code{BLOCKED} posts are not linked in the DAG.
@@ -524,12 +524,12 @@ Otherwise, it is \code{BLOCKED} and requires a like from another user.
 
 Blocked posts are not considered part of the forum DAG in the sense that new
 posts do not link back to it.
-In addition, peers are not required to hold blocked posts and neither
-retransmit them to other peers.
+In addition, peers are not required to hold blocked posts nor retransmit them
+to other peers.
 However, if blocked posts are not disseminated, new users will never have the
 chance to be welcomed with a like.
-A reasonable policy is to hold blocked posts in a temporary but public bag and
-retransmit them for some visibility in the network.
+Therefore, a reasonable policy is to hold blocked posts in a temporary but
+public bag and retransmit them for some visibility.
 
 Once accepted, a post becomes part of the forum and can never be removed
 again, since Merkle~DAGs are immutable by design.
@@ -576,9 +576,9 @@ synchronize directly.
 \section{Public Forums in Freechains}
 \label{sec.freechains}
 
-\FC~\cite{fcs.sbseg20} is an unstructured peer-to-peer topic-based
-publish-subscribe protocol, in which each \emph{chain} is a replicated
-Merkle-DAG representing the causal relationships between the messages.
+\FC~\cite{fcs.sbseg20} is an unstructured P2P topic-based publish-subscribe
+protocol, in which each \emph{chain} is a replicated Merkle-DAG representing
+the causal relationships between the messages.
 %
 The protocol operation is typical of publish-subscribe systems: an author
 publishes a post to a chain, and subscribed users eventually receive the
@@ -627,10 +627,9 @@ transfer to other authors, expanding the community.
 The \code{post} command in sequence is signed by the single pioneer and
 indicates the purpose of the chain for future users.
 
-The most basic concern in public forums is to resist Sybils abusing the
-chains.
-Fully peer-to-peer systems cannot rely on logins or {\footnotesize CAPTCHAs}
-due to the lack of a central authority.
+The most basic concern in public forums is to resist Sybil attacks.
+Fully P2P systems cannot rely on logins or {\footnotesize CAPTCHAs} due to the
+lack of a central authority.
 Viable alternatives include (i) building social trust graphs, in which users
 already in the community vouch for new users, or (ii) imposing explicit costs
 for new posts, such as proof of work.
@@ -689,7 +688,7 @@ quickly.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.75\textwidth]{forum.png}
+\includegraphics[width=0.65\textwidth]{forum.png}
 \caption{
     The \code{like} approves the newbie message into the \code{\#forum} DAG.
 }
@@ -723,11 +722,10 @@ provides incentives to spend likes and thus decentralize the network, while
 rule~\code{4.c} limits the size of posts to at most \emph{128kB} to prevent
 DDoS attacks using gigantic blocked posts.
 
-Likes and dislikes (rules \code{3.a} and \code{3.b}) serve three purposes
-in the chains:
+Likes and dislikes (rules \code{3.a} and \code{3.b}) serve three purposes:
     (i) welcoming new users,
     (ii) measuring the quality of posts, and
-    (iii) revoking abusive posts (SPAM, fake news, illicit content, etc).
+    (iii) revoking abusive posts (SPAM, fake news, etc).
 %
 The quality of posts is subjective and is up to users to judge them with likes,
 dislikes, or simply abstaining.
@@ -757,8 +755,8 @@ abusive behavior, but not to eliminate divergences of opinion.
 \subsection{Experiments with Public Forums in \FC}
 \label{sec.evaluation}
 
-In this section, we perform experiments to evaluate the performance and
-practicability of \FC and its consensus algorithm.
+We performed experiments to evaluate the performance of \FC and its consensus
+algorithm.
 %
 As detailed further, we measure the following evaluation parameters:
     (a) metadata overhead,
@@ -799,11 +797,11 @@ we measure in evaluation parameter (c).
 For the newsgroup, we use \texttt{N=15} and \texttt{M=5}, which represents a
 larger number of peers with few interconnections to stress the local-first
 nature of the protocol.
-For the chat, we use \texttt{N=5} and \texttt{M=3}, which represents a smaller
-number of peers with more interconnections.
+For the chat, we use \texttt{N=5} and \texttt{M=3}, which is a smaller number
+of peers but with more interconnections.
 %
-We executed each simulation $4$ times in a conventional desktop PC (\texttt{i7}
-CPU, \texttt{8GB} RAM, \texttt{512GB} SSD).
+We executed each simulation $4$ times in a desktop PC (\texttt{i7} CPU,
+\texttt{8GB} RAM, \texttt{512GB} SSD).
 Since the variations were negligible, we always discuss the median measures.
 
 \begin{comment}
@@ -1032,7 +1030,7 @@ Discussion:
 
 Many other systems have been proposed for decentralized content
 sharing~\cite{p2p.survey,p2p.ecosystem}.
-Here we consider the classes of publish-subscribe, federated, and peer-to-peer
+Here we consider the classes of publish-subscribe, federated, and P2P
 protocols.
 
 %\subsection{Publish-Subscribe Protocols}
@@ -1048,7 +1046,8 @@ communication still have a special role in the network, such as authenticating
 and validating posts.
 %
 Nevertheless, some pubsubs do not rely on server roles, and instead, use
-peer-to-peer gossip dissemination~\cite{pubsub.tera,pubsub.rappel,pubsub.stan,pubsub.vitis,pubsub.gossipsub,pubsub.rappel}.
+P2P gossip dissemination~\cite{pubsub.tera,pubsub.rappel,pubsub.gossipsub}.
+%,pubsub.stan,pubsub.vitis
 Most of these protocols focus on techniques to achieve scalability and
 performance, such as throughput, load balancing, and real-time relaying.
 %
@@ -1075,8 +1074,8 @@ interconnections between peers.
 
 %\subsection{Federated Protocols}
 
-Federated protocols, such as e-mail, allow users from one domain to seamlessly
-exchange messages with users of other domains.
+Federated protocols, such as e-mail, allow users from one domain to exchange
+messages with users of other domains.
 \emph{Diaspora}, \emph{Matrix}, and \emph{Mastodon} are recent federations for
 social media, chat, and microblogging~\cite{p2p.ecosystem}, respectively.
 %
@@ -1100,14 +1099,14 @@ flooded in the network.
 As a counterpoint, federated protocols seem to be more appropriate for
 real-time applications such as large chats rooms.
 The number of hops and header overhead can be much smaller in client-server
-architectures compared to peer-to-peer systems, which typically include message
-signing, hash linking, and extra verification rules (as evaluated in
+architectures compared to P2P systems, which typically include message signing,
+hash linking, and extra verification rules (as evaluated in
 Section~\ref{sec.evaluation}).
 
 %\subsection{Peer-to-Peer Protocols}
 
-Regarding peer-to-peer protocols, Bitcoin~\cite{p2p.bitcoin} is probably the
-most successful permissionless network, but serves specifically for electronic
+Regarding P2P protocols, Bitcoin~\cite{p2p.bitcoin} is probably the most
+successful permissionless network, but serves specifically for electronic
 cash.
 IPFS~\cite{p2p.ipfs} and Dat~\cite{p2p.dat} are data-centric protocols for
 hosting large files and applications, respectively.
@@ -1120,7 +1119,7 @@ Proof-of-stake is a prominent alternative~\cite{p2p.proofs} that acknowledges
 that centralization is inevitable, and thus uses a function of time and wealth
 to elect peers to mint new blocks.
 As an advantage, these proof mechanisms are generic and apply to multiple
-domains, since they depend on an extrinsic scarce resource.
+domains, since they depend on extrinsic resources.
 % (i.e., the richer gets richer)
 In contrast, we chose an intrinsic resource, which is authored content in the
 chains themselves.
@@ -1137,8 +1136,8 @@ value in itself.
 
 IPFS~\cite{p2p.ipfs} is centered around immutable content-addressed data, while
 Dat~\cite{p2p.dat} around mutable pubkey-addressed data.
-IPFS is more suitable to share large and stable content such as movies and
-archives, while Dat is more suitable for dynamic content such as web apps.
+IPFS is more suitable to share large and stable content such as movies, while
+Dat is more suitable for dynamic content such as web apps.
 %
 Both IPFS and Dat use DHTs as their underlying architectures, which are optimal
 to serve large and popular content, but not for search and discovery.
@@ -1182,8 +1181,8 @@ Also, a forum chain stores its own posts only, and are not simply tags over the
 entire content in the network.
 \end{comment}
 
-Aether~\cite{p2p.ecosystem} provides peer-to-peer public communities aligned
-with public forums of \FC (\Xnn).
+Aether~\cite{p2p.ecosystem} provides P2P public communities aligned with public
+forums of \FC (\Xnn).
 A fundamental difference is that Aether is designed for ephemeral, mutable
 posts with no intention to enforce global consensus across peers.
 Aether employs a very pragmatic approach to mitigate abuse in forums.
@@ -1197,7 +1196,7 @@ mechanisms for moderation.
 \label{sec.conclusion}
 
 In this paper, we propose a permissionless consensus and reputation mechanism
-for social content sharing in peer-to-peer networks.
+for social content sharing in P2P networks.
 We enumerate three main contributions:
     (i)   human authored content as a scarce resource
           (\emph{proof-of-authoring});
@@ -1217,8 +1216,8 @@ judgement of other users.
 This way, reputation generation is expensive, while verification is cheap and
 decentralized.
 
-The reputation and consensus mechanism is integrated into \FC, a peer-to-peer
-protocol, in which users can create public forums of interest and apply diverse
+The reputation and consensus mechanism is integrated into \FC, a P2P protocol,
+in which users can create public forums of interest and apply diverse
 moderation policies.
 In particular, users can revoke content considered abusive according to the
 majority, not depending on centralized authorities.
