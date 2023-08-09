@@ -74,6 +74,8 @@ Há uma seta bi-direcional entre os dois estados.
 > It is strange that known techniques like EigenTrust are not even mentioned,
 > even though we are in the blockchain domain.
 
+TODO
+
 > We do not know if the results are good or bad because there was no comparison
 > to the state of the art or baseline.
 
