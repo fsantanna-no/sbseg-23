@@ -27,8 +27,15 @@
     Peer-to-Peer Permissionless Consensus via Reputation
 }
 
-\author{Anonymous}
-\address{Anonymous}
+\author {
+    Francisco Sant'Anna,
+    Fabio Bosisio,
+    Lucas Pires
+}
+\address {
+    UERJ - PEL - Pós-Graduação em Engenharia Eletrônica
+    \email{francisco@ime.uerj.br, fbosisio@gmail.com, lucasampires@gmail.com}
+}
 
 \begin{document}
 
@@ -266,6 +273,8 @@ tolerate, which demands non-trivial work resistant to automation.%
     frequency and relevance in forums is still subject to human evaluation in
     our proposal.
 }
+In this sense, having one or hunderds of machines in the network does not
+affect the capacity to write into the chains.
 
 \begin{table}
 \centering
@@ -287,6 +296,8 @@ authoring generates \reps, while likes and dislikes only transfer \reps between
 users.
 %but limited by periods of time to prevent excess (e.g., once in a day per user).
 %Additionally,
+In our analogy with Bitcoin, Sybil attacks would require to add human resurces,
+instead of CPU power.
 
 Nevertheless, posts scarcity is not yet sufficient to combat Sybils because
 consensual order is still required to prevent inconsistent operations.
@@ -397,6 +408,11 @@ Likewise, peers that first saw branches with more reputation just need to
 append the other branch, with no reordering at all.
 %and do not need to recompute anything.
 This behavior is expected to happen in the majority of the connected network.
+%
+Legitimate posts in secondary branches might be removed due to merges, which
+requires that users repost the messages.
+Nevertheless, we expect that legitimate users gossip among themselves more
+often, preventing this situation.
 %
 Note that unlike Bitcoin, forks are not only permitted but encouraged due to
 the local-first software principle~\cite{p2p.local}, in which networked
@@ -761,6 +777,10 @@ As detailed further, we measure the following evaluation parameters:
     (b) consensus runtime,
     (c) graph forks, and
     (d) blocked messages.
+%
+The main goal of this section is to stress the consensus algorithm to show that
+permissionless public forums are viable, regardless of a slower performance in
+comparison to permissioned protocols.
 
 We simulate the behavior of two publicly available forums as if they were using
 \FC:
