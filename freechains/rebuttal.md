@@ -2,8 +2,14 @@
 
 We would like to thank the reviewers for the thoughtful comments, questions,
 and criticism.
-We will accommodate all clarifications and answers in a final version of the
+
+We accommodate all clarifications and answers in the final version of the
 paper.
+
+The link that follows shows the *diff* to reach the final version:
+
+- TODO
+
 Each comment is addressed individually as follows.
 
 ## Reviewer 1
@@ -16,7 +22,7 @@ Each comment is addressed individually as follows.
 
 Sim, para isso, ele teria que escrever em um fork "obscuro", desconectado do
 resto dos usuários legítimos.
-Ao ser reconectado, esse fork poderia sim ter posts removidos.
+Dessa forma, ao ser reconectado, esse fork poderia sim ter posts removidos.
 A única implicação é que ele teria que postar novamente a mesma mensagem.
 
 No meio da Seção 2.1, essa possibilidade é levantada, mas não com tanta ênfase:
@@ -25,13 +31,13 @@ No meio da Seção 2.1, essa possibilidade é levantada, mas não com tanta ênf
 > remaining posts are rejected and removed from the DAG, as if they never
 > existed.
 
-Em termos práticos, os usuários legítimos se conectam entre si ao longo do
-tempo, o que deveria ser suficiente para evitar essa situação.
+Em termos práticos, os usuários legítimos se conectam mais diretamente ao
+longo do tempo, o que deveria ser suficiente para evitar essa situação.
 Para a versão final, nós adicionamos o seguinte trecho:
 
 > Legitimate posts in secondary branches might be removed due to merges, which
 > requires that users repost the messages. Nevertheless, we expect that
-> legitimate users gossip among themselves more often, preventing this
+> legitimate users gossip among themselves more often, thus preventing this
 > situation.
 
 > Além disso, é possível que um usuário malicioso participe de mais de uma
@@ -54,13 +60,13 @@ Esse critério é descrito no final da Seção 2.2:
 > ...otherwise, branches use the arbitrary criteria of lexicographical order of
 > the post hashes immediately after the common prefix.
 
-Agora vamos discutir um possível ataque usando essa estratégia.
-O usuário malicioso poderia escrever em vários branches antes de usuários
-legítimos, de forma que os merges acabariam por remover mensagens legítimas.
-Essa situação é análoga ao comentário anterior e obrigaria os usuários a
+Como um possível ataque, o usuário malicioso poderia escrever em vários
+branches antes de usuários legítimos, de forma que os merges acabariam por
+remover mensagens legítimas.
+Essa situação, que complementa o comentário anterior, obrigaria os usuários a
 repostarem as mensagens.
-Nós entendemos que os usuários legítimos estarão mais conectados,
-inviabilizando esse tipo de ataque.
+Da mesma forma, nós entendemos que os usuários legítimos estarão mais
+conectados, inviabilizando esse tipo de ataque.
 
 > Pela descrição, aparentemente na Figura 3 deveria ter uma transição de
 > revoked  para accepted.
@@ -80,8 +86,8 @@ TODO
 > to the state of the art or baseline.
 
 The main goal of our experiments in Section 3.1 is to stress the consensus
-algorithm to show that the mechanism is practical, i.e., that it has a
-reasonable performance.
+algorithm to show that the mechanism is feasible, i.e., that it has a
+reasonable performance to be used in practice.
 The good result is that the protocol works in a permissionless context,
 regardless of the slower performance.
 
@@ -124,17 +130,18 @@ We included the following remarks:
 > It's important to note that the reputation system does not enforce "good"
 > human behavior but provides a transparent and quantitative way for users to
 > understand forum evolution and act accordingly. 
-
+> ...
 > I am also concerned that the content removal is too weak to work in practice.
 > For example, a Forum may be taken over by extremists, and they can upvote
 > illegal content. That would require removal due to legal process, or face
 > blocking at network level.
 
-This is all true, and the reason why we close the paper with your remark above.
+This is all true, and is the reason why we close the paper with your remark
+above.
 It is not even required to be "taken by extremists", but only "created by and
 for extremists".
-But we also believe that a protocol that is tamper proof and provides
-persistence can actually help law enforcement.
+But we also believe that a protocol that is tamper proof, and provides
+persistence and data transparency can actually support law enforcement.
 
 > Maybe a way to go is to create a pool of super-reputations that could answer
 > to injunctions and administratively remove the content and a measure to avoid
@@ -147,10 +154,11 @@ provides hard forks, as discussed in the middle of Section 2.2:
 > in which reconciling branches is no longer possible.
 
 > The paper is too descriptive, so reading sometime is tiresome.
-
+> ...
 > Reading could be improves by using some figures to explain ideas. Sometimes
 > it is difficult to follow the text.
 
 We opted for a full description of the protocol, but we recognize that the
 paper became a bit dense.
-It is hard to modify the whole text without more specific suggestions.
+It is hard to modify the whole text without more specific suggestions, but we
+removed some details of Freechains from Section 3.
