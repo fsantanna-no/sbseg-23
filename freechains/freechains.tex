@@ -93,10 +93,8 @@ Twitter)~\cite{internet.fixing}.
 %,p2p.osn,p2p.dosn}.
 %These companies benefit from closed protocols and network effects to keep
 %users locked in their platforms.
-On the one hand, these companies offer free storage, friendly user interfaces,
-and robust access.
-On the other hand, they concentrate excessive power, controlling and monetizing
-over private user data.
+These companies offer free storage, friendly user interfaces, and robust access,
+but concentrate excessive power, controlling and monetizing over private user data.
 %
 Peer-to-peer alternatives~\cite{p2p.survey} eliminate intermediaries, but
 strive to achieve consistency when dealing with malicious users.
@@ -108,14 +106,14 @@ In an ideal Internet forum, all messages or posts
 (ii)  are delivered in consistent order, and
 (iii) are respectful and on topic.
 In centralized systems, items (i) and (ii) are trivially achieved assuming
-availability and delivery order, while item (iii) assumes that users trust the
+availability and delivery order, while item (iii) requires that users trust the
 service to moderate content.
 In decentralized systems, however, none of these demands are easily
 accomplished.
 A common approach in gossiping protocols is to proactively disseminate posts
 among peers until they reach all users~\cite{p2p.survey,p2p.byz}.
-However, this approach does not guarantee consensus since posts can be received
-in conflicting orders~\cite{p2p.intention}.
+However, gossiping does not guarantee consensus since posts can be received in
+conflicting orders~\cite{p2p.intention}.
 %,p2p.dvcs}.
 %As an example, antagonistic messages such as \emph{"X is final"} vs
 %\emph{"Y is final"} might be sent concurrently, preventing the network to
@@ -125,7 +123,8 @@ Consensus is key to distinguish malicious behavior \emph{at the protocol
 level}, and therefore, satisfy item (iii).
 Without consensus, each client must rely on local anti-abuse policies, such as
 SPAM filters and blacklists, but which only apply a posteriori, when the
-abusive messages have already been flooded in the network.
+abusive messages have already been flooded in the network by potential
+Sybils~\cite{p2p.sybil}.
 %
 %fundamental in collaborative applications, such as open discussion
 %forums, chat rooms, and trading services (e.g., delivery \& auction).
@@ -142,7 +141,7 @@ partially abdicate of it.
 %
 On the one hand, federated protocols~\cite{p2p.ecosystem} offer
 \emph{multi-user/single-node consensus}, in which multiple users can exchange
-messages consistenlty within a single trusted server, but not globally across
+messages consistently within a single trusted server, but not globally across
 multiple servers.
 %
 On the other hand, a protocol like Scuttlebutt~\cite{p2p.scuttlebutt} offers
@@ -161,8 +160,7 @@ Furthermore, without consensus, it is not possible,
 \end{comment}
 
 Bitcoin~\cite{p2p.bitcoin} is the first permissionless protocol to resist
-Sybil attacks~\cite{p2p.sybil}.
-Its key insight is to rely on a scarce resource---the \emph{proof-of-work}---to
+Sybil attacks, relying on a scarce resource---the \emph{proof-of-work}---to
 establish consensus.
 %The protocol maintains a single dispendious timeline consisting of linked
 %blocks with transactions, which represent the consensus.
@@ -170,8 +168,8 @@ establish consensus.
 The protocol is Sybil resistant because it is expensive to write to its
 unique timeline (either via proof-of-work or transaction fees).
 %
-However, Bitcoin and cryptocurrencies in general are not suitable for content
-sharing because
+However, Bitcoin and cryptocurrencies in general are not suitable for social
+content sharing because
     (i)   they enforce a unique timeline to preserve value and immunity to
           attacks;
     (ii)  they lean towards concentration of power due to scaling effects;
@@ -195,36 +193,39 @@ illicit content (e.g., hate speech)~\cite{btc.content}.
 
 In this work, we adapt the idea of scarce resources to reach consensus and
 eradicate Sybils, but in the context of social content sharing.
+We indicate 4 main contributions:
 %
-Our first contribution is to recognize the actual published contents as the
-scarce resources themselves, since they require human work.
-%
+\begin{enumerate}
+\item Recognizing published contents as scarce resources, since they require
+human work.
 Work is manifested as new posts, which if approved by others, reward authors
 with reputation tokens, which are further used to evaluate other posts with
 likes and dislikes.
 With such \emph{proof-of-authoring} mechanism, token generation is expensive,
 while verification is cheap and shared by multiple users.
 %
+\item Using the reputation system to determine consensus.
 Due to decentralization and network partitions, posts in a timeline form a
 causal graph with only partial order, which we promote to a total order based
 on the reputation of authors.
 The consensus order is fundamental to detect conflicting operations, such as
 likes with insufficient reputation (akin to Bitcoin's double spending).
 %
-Our second contribution is to allow users to create diversified forums of
-interest (instead of a singleton blockchain), each counting as an independent
-timeline with its own subjective consensus etiquette.
+\item Allowing users to create diversified forums of interest (instead of a
+singleton blockchain), each counting as an independent timeline with its own
+subjective authoring etiquette.
 %
-Our third contribution is to support content removal without compromising the
-integrity of the decentralized blockchain.
+\item Supporting content removal without compromising the integrity of the
+decentralized blockchain.
 Users have the power to revoke posts with dislikes, and peers are forced to
 remove payloads, only forwarding associated blockchain metadata.
+\end{enumerate}
 %
 We integrated the proposed consensus algorithm into \FC~\cite{fcs.sbseg20}, a
 practical peer-to-peer (P2P) content dissemination protocol that provides
 strong eventual consistency~\cite{p2p.sec}.
 %p2p.crdts,
-To show the practicability of the consensus mechanism, we simulated months of
+To show the feasibility of the consensus mechanism, we simulated months of
 activity of a chat channel and years of a newsgroup forum, both extracted from
 publicly available Internet archives.
 
@@ -250,6 +251,8 @@ identities and SPAM millions of messages.
 For this reason, we propose a reputation system that works together with a
 consensus algorithm to resist Sybil attacks.
 % and make peer-to-peer public forums practical.
+We consider Sybils to be groups of throw-away identities and machines with no
+previous reputation in the forums.
 
 In our system, users can spend tokens named \reps to post and rate content in
 forums:
@@ -273,8 +276,8 @@ tolerate, which demands non-trivial work resistant to automation.%
     frequency and relevance in forums is still subject to human evaluation in
     our proposal.
 }
-In this sense, having one or hunderds of machines in the network does not
-affect the capacity to write into the chains.
+In this sense, having one or hundreds of machines in the network does not
+affect the capacity to write into the forums.
 
 \begin{table}
 \centering
@@ -296,7 +299,7 @@ authoring generates \reps, while likes and dislikes only transfer \reps between
 users.
 %but limited by periods of time to prevent excess (e.g., once in a day per user).
 %Additionally,
-In our analogy with Bitcoin, Sybil attacks would require to add human resurces,
+In our analogy with Bitcoin, Sybil attacks would require to add human resources,
 instead of CPU power.
 
 Nevertheless, posts scarcity is not yet sufficient to combat Sybils because
@@ -354,8 +357,8 @@ merge the branches now with a common suffix.
 Note that even non-malicious network partitions may experience conflicts when
 merging branches.
 For instance, dislike operations in one branch to past posts in the common
-prefix could possibly block posts from users in the other branch, depending on
-how they posts are ordered.
+prefix could possibly block posts from users in the other branch.
+%, depending on how the posts are ordered.
 Therefore, we need to order branches with a global consensus, such that we can
 validate operations consistently across the network.
 %
@@ -372,7 +375,7 @@ indicates the consensus order between posts in the forum DAG:
 %
 The \code{branch-2} with users $a$ and $b$ takes priority over \code{branch-1}
 with user $c$ because, before the forking point, $a$ and $b$ have more
-reputation than $c$, $x$, and $y$ combined.
+reputation than $c$, $x$, and $y$ have combined.
 
 The basic consensus rule is therefore straightforward:
 Whenever a fork is found, we create sets of users with posts in each branch
@@ -386,11 +389,11 @@ Finally, we order the branches based on the highest sum of \reps found
 While applying the branches in order, if any post operation fails, all
 remaining posts are rejected and removed from the DAG, as if they never
 existed.
-As an example, suppose that the last post by $a$ (in gray) is a dislike to user
-$c$.
-Then, it's possible that the last post by $c$ (in red), now suppose with
-\nreps{0}, is rejected together with all posts in sequence, including those in
-the common suffix.
+As an example, suppose that the last post by $a$ in \code{branch-2} (in gray)
+is a dislike to user $c$.
+Then, it's possible that the last post by $c$ in \code{branch-1} (in red), now
+suppose with \nreps{0}, is rejected together with all posts in sequence,
+including those in the common suffix.
 %
 This rejection rule for remaining posts is a direct consequence of tamper proof
 Merkle~DAGs~\cite{p2p.ipfs,p2p.bitcoin} typically used in permissionless
@@ -436,7 +439,7 @@ operations, and is only a view of the primary DAG structure of public forums.
 Consider a malicious scenario in which user $c$ in Figure~\ref{fig.reps}
 intentionally disconnects from the network for weeks to cultivate fake
 identities $x$ and $y$ with the intention to accumulate \reps.
-When merging, these fake users would become legitimate and accumulate the
+When merging, these fake users would become legitimate and take over the
 majority of \reps in the forum.
 %
 However, this kind of attack is refutable because, since the common prefix is
@@ -449,8 +452,8 @@ invalidates all posts from \code{branch-1}, removing them from the DAG.
 This kind of attack is innocuous because it requires at least half of the \reps
 accumulated in the common prefix.
 %
-The same countermeasure can be used against a minority of malicious users
-colluding to boost or protect their own posts.
+%The same countermeasure can be used against a minority of malicious users
+%colluding to boost or protect their own posts.
 
 \begin{figure}
 \centering
@@ -469,7 +472,7 @@ forum and would succeed, since they control the majority of \reps in the common
 prefix.
 Yet another possibility is that both branches are legitimate but became
 disconnected for a long period of time.
-In any case, it is unacceptable that a very old remote branch affects a long
+In any case, it is unacceptable that an old remote branch affects a local
 active forum.
 
 For this reason, the consensus algorithm includes an extra constraint that
@@ -542,8 +545,8 @@ In addition, peers are not required to hold blocked posts nor retransmit them
 to other peers.
 However, if blocked posts are not disseminated, new users will never have the
 chance to be welcomed with a like.
-Therefore, a reasonable policy is to hold blocked posts in a temporary but
-public bag and retransmit them for some visibility.
+Therefore, a reasonable policy is to hold blocked posts in a temporary bag and
+retransmit them for some visibility.
 
 Once accepted, a post becomes part of the forum and can never be removed
 again, since Merkle~DAGs are immutable by design.
@@ -565,7 +568,7 @@ becomes \code{ACCEPTED} again.
 
 Similarly to Bitcoin, the underlying network protocol replicates on each peer
 the full state of the Merkle-DAG representing the causal relationships between
-the messages.
+posts.
 When peers synchronize, they mutually exchange missing branches such that they
 reach the same DAG structure~\cite{p2p.byz}.
 As they synchronize, each peer runs the consensus algorithm locally and
@@ -641,15 +644,19 @@ transfer to other authors, expanding the community.
 The \code{post} command in sequence is signed by the single pioneer and
 indicates the purpose of the chain for future users.
 
-The most basic concern in public forums is to resist Sybil attacks.
-Fully P2P systems cannot rely on logins or {\footnotesize CAPTCHAs} due to the
-lack of a central authority.
-Viable alternatives include (i) building social trust graphs, in which users
-already in the community vouch for new users, or (ii) imposing explicit costs
-for new posts, such as proof of work.
+%already in the community vouch for new users, or (ii) imposing explicit costs
+%for new posts, such as proof of work.
+%The most basic concern in public forums is to resist Sybil attacks.
+%Fully P2P systems cannot rely on logins or {\footnotesize CAPTCHAs} due to the
+%lack of a central authority.
+%Viable alternatives include (i) building social trust graphs, in which users
+%already in the community vouch for new users, or (ii) imposing explicit costs
+%for new posts, such as proof of work.
 %
-We propose a mix between trust graphs and economic costs.
+%We propose a mix between trust graphs and economic costs.
 %
+In order to resist Sybils, we propose a mix between building social trust
+graphs and imposing explicit costs for new posts:
 Rule~\code{4.a} imposes that authors require at least \onerep to post,
 effectively blocking Sybil actions.
 To vouch for new users, rule~\code{3.a} allows an existing user to like a
@@ -728,13 +735,13 @@ It also regulates the growth speed of the chain.
 In Figure~\ref{fig.forum}, after 1 day, the pioneer would now accumulate
 \nreps{30} and the new user \nreps{2}, growing the economy in \nreps{2} as
 result of the two new consolidated posts.
-Note that rule~\code{1.b} rewards at most one post of each author at a time.
-Hence, extra posts during the 24-hour period do not reward authors with extra
-\reps.
-Note also that rule~\code{4.b} limits authors to at most \nreps{30}, which
-provides incentives to spend likes and thus decentralize the network, while
-rule~\code{4.c} limits the size of posts to at most \emph{128kB} to prevent
-DDoS attacks using gigantic blocked posts.
+%Note that rule~\code{1.b} rewards at most one post of each author at a time.
+%Hence, extra posts during the 24-hour period do not reward authors with extra
+%\reps.
+%Note also that rule~\code{4.b} limits authors to at most \nreps{30}, which
+%provides incentives to spend likes and thus decentralize the network, while
+%rule~\code{4.c} limits the size of posts to at most \emph{128kB} to prevent
+%DDoS attacks using gigantic blocked posts.
 
 Likes and dislikes (rules \code{3.a} and \code{3.b}) serve three purposes:
     (i) welcoming new users,
@@ -744,9 +751,9 @@ Likes and dislikes (rules \code{3.a} and \code{3.b}) serve three purposes:
 The quality of posts is subjective and is up to users to judge them with likes,
 dislikes, or simply abstaining.
 %
-This way, access to chains is permissionless in the sense that the actual peers
-and identities behind posts are not directly assessed by the protocol, but
-instead by the judgement of other users in the system.
+%This way, access to chains is permissionless in the sense that the actual peers
+%and identities behind posts are not directly assessed by the protocol, but
+%instead by the judgement of other users in the system.
 %
 The reputation of a given post is the difference between its likes and
 dislikes, which can be used in end-user software for filtering and highlighting
@@ -779,8 +786,8 @@ As detailed further, we measure the following evaluation parameters:
     (d) blocked messages.
 %
 The main goal of this section is to stress the consensus algorithm to show that
-permissionless public forums are viable, regardless of a slower performance in
-comparison to permissioned protocols.
+permissionless public forums are viable, regardless of the inherent slower
+performance in comparison to permissioned protocols.
 
 We simulate the behavior of two publicly available forums as if they were using
 \FC:
@@ -800,7 +807,7 @@ represent 3 months of activity in the chat and 9 years in the newsgroup.
 The simulation spawns $N$ peers, each joining the same chain with the same
 arguments.
 For each message in the original forum, we
-    (i)   set the timestamp of all peers to match the original date,
+    (i)   set the timestamp of peers to match the original date,
     (ii)  create a pair of keys if the author is new,
     (iii) post the message from a random peer in $N$,
     (iv)  like the post if the author has no reputation, and

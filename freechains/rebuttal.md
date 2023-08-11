@@ -88,14 +88,15 @@ regardless of the slower performance.
 We added the following remark at the beginning of Section 3.1:
 
 > The main goal of this section is to stress the consensus algorithm to show
-> that permissionless public forums are viable, regardless of a slower
-> performance in comparison to permissioned protocols.
+> that permissionless public forums are viable, regardless of the inherent
+> slower performance in comparison to permissioned protocols.
 
 > Also, at the end of the day, we do not know if the proposal is resistant to
 > Sybil attacks because there was no validation of the consensus and reputation
 > mechanisms.
 
-The protocol is Sybil resistant because it is expensive to write to a chain.
+In our context, a Sybil is a random machine/identity with no previous
+reputation in the chains, which, by definition, cannot operate in the chains.
 By default, users with no reps do not have write access, as described in the
 beginning of Section 2:
 
@@ -109,11 +110,14 @@ beginning of Section 2:
 
 We included the following remarks:
 
-> In this sense, having one or hunderds of machines in the network does not
-> affect the capacity to write into the chains.
+> We consider Sybils to be groups of throw-away identities and machines with
+> no previous reputation in the forums.
+> ...
+> In this sense, having one or hundreds of machines in the network does not
+> affect the capacity to write into the forums.
 > ...
 > In our analogy with Bitcoin, Sybil attacks would require to add human
-> resurces, instead of CPU power.
+> resources, instead of CPU power.
 
 # Reviewer 3
 
