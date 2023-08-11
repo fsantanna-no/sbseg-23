@@ -106,8 +106,8 @@ In an ideal Internet forum, all messages or posts
 (ii)  are delivered in consistent order, and
 (iii) are respectful and on topic.
 In centralized systems, items (i) and (ii) are trivially achieved assuming
-availability and delivery order, while item (iii) requires that users trust the
-service to moderate content.
+availability and delivery order, while item (iii) requires users to trust the
+service policies.
 In decentralized systems, however, none of these demands are easily
 accomplished.
 A common approach in gossiping protocols is to proactively disseminate posts
@@ -122,9 +122,8 @@ conflicting orders~\cite{p2p.intention}.
 Consensus is key to distinguish malicious behavior \emph{at the protocol
 level}, and therefore, satisfy item (iii).
 Without consensus, each client must rely on local anti-abuse policies, such as
-SPAM filters and blacklists, but which only apply a posteriori, when the
-abusive messages have already been flooded in the network by potential
-Sybils~\cite{p2p.sybil}.
+SPAM filters, but which only apply a posteriori, when the abusive messages have
+already been flooded in the network by potential Sybils~\cite{p2p.sybil}.
 %
 %fundamental in collaborative applications, such as open discussion
 %forums, chat rooms, and trading services (e.g., delivery \& auction).
@@ -160,8 +159,8 @@ Furthermore, without consensus, it is not possible,
 \end{comment}
 
 Bitcoin~\cite{p2p.bitcoin} is the first permissionless protocol to resist
-Sybil attacks, relying on a scarce resource---the \emph{proof-of-work}---to
-establish consensus.
+Sybils, relying on a scarce resource---the \emph{proof-of-work}---to establish
+consensus.
 %The protocol maintains a single dispendious timeline consisting of linked
 %blocks with transactions, which represent the consensus.
 %Alternative timelines need to spend more resources to substitute the consensus.
@@ -176,13 +175,12 @@ content sharing because
     (iii) they impose an external economic cost to use the protocol; and
     (iv)  they rely exclusively on objective rules to reach consensus.
 %
-These issues threaten our original decentralization goals, and more
-importantly, they renounce subjectivity, which is inherent to content
-moderation.
+These issues threaten our decentralization goals, and more importantly, they
+renounce subjectivity, which is inherent to content moderation.
 %
-For instance, a unique timeline implies that all Internet content should be
-subject to the same consensus rules, while objective rules alone cannot
-distinguish abuse amid content.
+For instance, a unique timeline implies that all Internet content is subject
+to the same consensus rules, while objective rules alone cannot distinguish
+abuse amid content.
 %
 Another limitation of cryptocurrencies is that it is not possible to revoke
 content in the middle of a blockchain, which is inadmissible considering
@@ -211,8 +209,8 @@ on the reputation of authors.
 The consensus order is fundamental to detect conflicting operations, such as
 likes with insufficient reputation (akin to Bitcoin's double spending).
 %
-\item Allowing users to create diversified forums of interest (instead of a
-singleton blockchain), each counting as an independent timeline with its own
+\item Allowing users to create diversified forums of interest (not a
+singleton blockchain), each as an independent timeline with its own
 subjective authoring etiquette.
 %
 \item Supporting content removal without compromising the integrity of the
