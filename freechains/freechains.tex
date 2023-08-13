@@ -1051,10 +1051,10 @@ Discussion:
 \section{Related Work}
 \label{sec.related}
 
-Many other systems have been proposed for decentralized content
-sharing~\cite{p2p.survey,p2p.ecosystem}.
-Here we consider the classes of publish-subscribe, federated, and P2P
-protocols.
+%Many other systems have been proposed for decentralized content
+%sharing~\cite{p2p.survey,p2p.ecosystem}.
+%Here we consider the classes of publish-subscribe, federated, and P2P
+%protocols.
 
 %\subsection{Publish-Subscribe Protocols}
 
@@ -1214,6 +1214,23 @@ innovative voting system to moderate forums, but which affects local instances
 only.
 In contrast, \FC relies on its permissionless reputation and consensus
 mechanisms for moderation.
+
+Some works for P2P file sharing propose to account the reputation of peers to
+form a web of trust based on their behavior
+history~\cite{p2p.rep.wang,p2p.rep.eigentrust}.
+However, there are three key aspects in terms of scope that distinguishes our
+reputation system: its focus on the contents, its subjective nature, and its
+dependency on consensus.
+First, it is the actual contents that are stored and evaluated in the forums,
+with the identities being a secondary attribute.
+Second, content evaluation is subjective, as well as any decision to revoke
+posts or to fork forums.
+Third, at any given point in time, peers must agree on a common forum DAG
+prefix with global and deterministic accuracy to act identically as a whole.
+In this case, consensus is fundamental, since a subtle off-by-one discrepancy
+in reputation creates an irreconcilable fork in the network.
+Achieving consensus on a permissionless network is the key contribution of this
+work.
 
 \section{Conclusion}
 \label{sec.conclusion}
