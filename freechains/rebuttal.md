@@ -8,7 +8,7 @@ paper.
 
 The link that follows shows the *diff* to reach the final version:
 
-- TODO
+- \url{https://github.com/fsantanna-no/sbseg-23/compare/0145ec9d59ff2e1b4e1053505bf5614d63326166..b51a401cb67ece6857bd697f39df0ea428b0ba07?diff=split}
 
 Each comment is addressed individually as follows.
 
@@ -26,8 +26,6 @@ Dessa forma, ao ser reconectado, esse fork poderia sim ter posts removidos.
 A única implicação é que ele teria que postar novamente a mesma mensagem.
 
 No meio da Seção 2.1, essa possibilidade é levantada, mas não com tanta ênfase:
-
--------------------------------------------------------------------------------
 
 > While applying the branches in order, if any post operation fails, all
 > remaining posts are rejected and removed from the DAG, as if they never
@@ -58,7 +56,7 @@ Nesse caso, a reputação prévia dele vai contar igualmente em todos os merges,
 se anulando e, portanto, não influenciando no resultado final do merge.
 
 Em caso de empate, que pode acontecer mesmo sem usuários maliciosos, o hash do
-fork será critério considerado por todos igualmente.
+fork será o critério considerado por todos igualmente.
 Esse critério é descrito no final da Seção 2.2:
 
 > ...otherwise, branches use the arbitrary criteria of lexicographical order of
@@ -90,7 +88,7 @@ We added a new paragraph at the end of Section 4 (Related Work), as follows:
 
 > Some works for P2P file sharing propose to account the reputation of peers to
 > form a web of trust based on their behavior
-> history~\cite{p2p.rep.wang,p2p.rep.eigentrust}.
+> history [Wang,EigenTrust].
 > However, there are three key aspects in terms of scope that distinguishes our
 > reputation system: its focus on the contents, its subjective nature, and its
 > dependency on consensus.
