@@ -220,12 +220,11 @@ remove payloads, only forwarding associated blockchain metadata.
 \end{enumerate}
 %
 We integrated the proposed consensus algorithm into \FC~\cite{fcs.sbseg20}, a
-practical peer-to-peer (P2P) content dissemination protocol that provides
-strong eventual consistency~\cite{p2p.sec}.
+peer-to-peer (P2P) content dissemination protocol that provides strong eventual
+consistency~\cite{p2p.sec}.
 %p2p.crdts,
-To show the feasibility of the consensus mechanism, we simulated months of
-activity of a chat channel and years of a newsgroup forum, both extracted from
-publicly available Internet archives.
+To show the feasibility of the consensus mechanism, we simulated a chat channel
+and a newsgroup forum, both extracted from publicly available Internet archives.
 
 The rest of the paper is organized as follows:
 In Section~\ref{sec.design}, we describe the design of the reputation and
@@ -240,16 +239,16 @@ In Section~\ref{sec.conclusion}, we conclude this work.
 \section{The Reputation and Consensus Mechanism}
 \label{sec.design}
 
-In the absence of moderation, permissionless P2P forums are impractical, mostly
-because of Sybils abusing the system.
-For instance, it should take a few seconds to generate thousands of fake
+Without moderation, permissionless P2P forums are impractical
+due to Sybils abusing the system.
+For instance, it should take seconds to generate thousands of fake
 identities and SPAM millions of messages.
 %Hence, without moderation, there are no limits on the number and size of posts
 %and no reasonable policy to distinguish quality.
 For this reason, we propose a reputation system that works together with a
-consensus algorithm to resist Sybil attacks.
+consensus algorithm to resist Sybils.
 % and make peer-to-peer public forums practical.
-We consider Sybils to be groups of throw-away identities and machines with no
+We consider Sybils as groups of throw-away identities and machines with no
 previous reputation in the forums.
 
 In our system, users can spend tokens named \reps to post and rate content in
@@ -352,8 +351,8 @@ merge the branches now with a common suffix.
 \label{fig.reps}
 \end{figure}
 
-Note that even non-malicious network partitions may experience conflicts when
-merging branches.
+Note that even non-malicious partitions may experience conflicts when
+merging.
 For instance, dislike operations in one branch to past posts in the common
 prefix could possibly block posts from users in the other branch.
 %, depending on how the posts are ordered.
@@ -465,18 +464,17 @@ accumulated in the common prefix.
 
 As a counterpoint, maybe users $a$ and $b$ have abandoned the forum for months,
 and thus \code{branch-1} is actually legitimate.
-In this case, users $a$ and $b$ might be the ones trying to take over the
-forum and would succeed, since they control the majority of \reps in the common
+In this case, users $a$ and $b$ would succeed to take over the
+forum, since they control the majority of \reps in the common
 prefix.
 Yet another possibility is that both branches are legitimate but became
-disconnected for a long period of time.
+disconnected for a long period.
 In any case, it is unacceptable that an old remote branch affects a local
 active forum.
 
 For this reason, the consensus algorithm includes an extra constraint that
-prevents long-lasting local branches to merge, which leads to \emph{hard forks}
-in the network.
-A hard fork occurs when a local branch crosses a predetermined and irreversible
+prevents long-lasting local branches to merge, leading to \emph{hard forks}.
+A hard fork occurs when a local branch crosses a predetermined
 threshold of \emph{7 days} or \emph{100 posts} of activity.
 In this case, regardless of the remote branch reputation, the local branch
 takes priority and is ordered first.
@@ -497,7 +495,7 @@ branch \code{i} from a local machine are as follows:
     \item \code{i} is first if it crosses the activity threshold of
           \emph{7 days} or \emph{100 posts}, regardless of \code{j}.
     \item \code{i} or \code{j} is first, whichever has more reputation in the
-          common prefix, as discussed in Section~\ref{sec.design.basic}.
+          common prefix (Section~\ref{sec.design.basic}).
     \item otherwise, branches use the arbitrary criteria of lexicographical
           order of the post hashes immediately after the common prefix.
 \end{itemize}
@@ -613,9 +611,9 @@ publishes a post to a chain, which subscribed users eventually receive.
 In order to support content moderation and mitigate abuse, we integrated the
 proposed reputation and consensus mechanism of Section~\ref{sec.design} with
 \FC.
-Table~\ref{fig.rules} details the concrete reputation rules we conceived for
-\FC, which is compatible with the general rules of Table~\ref{fig.general}, and
-which are discussed as follows through an example.
+Table~\ref{fig.rules} details the reputation rules we conceived for
+\FC, which is compatible with the general rules of Table~\ref{fig.general}.
+%, and which are discussed as follows through an example.
 Authors have to sign posts in order to be accounted by the reputation system
 and operate in the chains.
 We start by creating an identity whose public key is assigned as the pioneer in
@@ -653,14 +651,14 @@ indicates the purpose of the chain for future users.
 %
 %We propose a mix between trust graphs and economic costs.
 %
-In order to resist Sybils, we propose a mix between building social trust
-graphs and imposing explicit costs for new posts:
-Rule~\code{4.a} imposes that authors require at least \onerep to post,
+In order to resist Sybils, we propose a mix between social trust
+graphs and explicit costs for new posts:
+Rule~\code{4.a} imposes to authors at least \onerep to post,
 effectively blocking Sybil actions.
 To vouch for new users, rule~\code{3.a} allows an existing user to like a
 newbie's post to unblock it, but at the cost of \onerep.
-This cost prevents that malicious members unblock new users indiscriminately,
-which would be a breach for Sybils.
+This cost prevents malicious members to unblock new users indiscriminately.
+%which would be a breach for Sybils.
 For the same reason, rule~\code{2} imposes a temporary cost of \onerep for
 each new post.
 %
@@ -777,13 +775,13 @@ abusive behavior, but not to eliminate divergences of opinion.
 We performed experiments to evaluate the performance of \FC and its consensus
 algorithm.
 %
-As detailed further, we measure the following evaluation parameters:
+As detailed next, we measure the following evaluation parameters:
     (a) metadata overhead,
     (b) consensus runtime,
     (c) graph forks, and
     (d) blocked messages.
 %
-The main goal of this section is to stress the consensus algorithm to show that
+Our goal is to stress the consensus algorithm to show that
 permissionless public forums are viable, regardless of the inherent slower
 performance in comparison to permissioned protocols.
 
@@ -857,13 +855,16 @@ $50\%$ overhead.
 It is clear that the metatada overhead is not negligible, specially for short
 chat messages, but decreases as the payload increases.
 
-Evaluation item (b) accounts the consensus algorithm applied locally at each
-chain.
-We measured the time to sort posts in a local DAG both for the first time
-(without any caches), and incrementally (from stable consensus caches).
+Evaluation item (b) accounts the consensus algorithm applied locally.
+% at each chain.
+We measured the time to sort posts in a local DAG both for the first time.
+%(without any caches),
+and incrementally from stable consensus caches.
 %
 For the chat chain, it takes \texttt{125s} and \texttt{50ms} for the initial
-and incremental sorts respectively, while for the newsgroup chain, it takes
+and incremental sorts,
+% respectively,
+while for the newsgroup chain, it takes
 \texttt{100s} and \texttt{70ms}.
 %
 %Currently, we synchronize the DAGs takes hours because we the synchronization time
@@ -1059,8 +1060,8 @@ Discussion:
 %\subsection{Publish-Subscribe Protocols}
 
 Decentralized topic-based publish-subscribe protocols, such as
-    \emph{XMPP}~\cite{pubsub.xmpp},
-    \emph{ActivityPub}~\cite{pubsub.activitypub}, and
+    %\emph{XMPP}~\cite{pubsub.xmpp}, and
+    \emph{ActivityPub}~\cite{pubsub.activitypub} and
     \emph{gossipsub}~\cite{pubsub.gossipsub},
 decouples publishers from subscribers in the network.
 %
@@ -1091,9 +1092,9 @@ Another advantage of a tighter integration between the application and protocol
 is that Merkle~DAGs simplify synchronization, provide persistence, and prevent
 duplication of messages.
 %
-In summary, \FC and \emph{pubsub} middlewares operate at different network
-layers, which suggests that \FC could benefit of the latter to manage the
-interconnections between peers.
+%In summary, \FC and \emph{pubsub} middlewares operate at different network
+%layers, which suggests that \FC could benefit of the latter to manage the
+%interconnections between peers.
 
 %\subsection{Federated Protocols}
 

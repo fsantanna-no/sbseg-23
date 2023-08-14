@@ -27,6 +27,8 @@ A única implicação é que ele teria que postar novamente a mesma mensagem.
 
 No meio da Seção 2.1, essa possibilidade é levantada, mas não com tanta ênfase:
 
+-------------------------------------------------------------------------------
+
 > While applying the branches in order, if any post operation fails, all
 > remaining posts are rejected and removed from the DAG, as if they never
 > existed.
@@ -39,6 +41,8 @@ Para a versão final, nós adicionamos o seguinte trecho:
 > requires that users repost the messages. Nevertheless, we expect that
 > legitimate users gossip among themselves more often, thus preventing this
 > situation.
+
+-------------------------------------------------------------------------------
 
 > Além disso, é possível que um usuário malicioso participe de mais de uma
 > cadeia em um fork? neste caso como fica a regra de merge? e se der empate,
@@ -68,6 +72,8 @@ repostarem as mensagens.
 Da mesma forma, nós entendemos que os usuários legítimos estarão mais
 conectados, inviabilizando esse tipo de ataque.
 
+-------------------------------------------------------------------------------
+
 > Pela descrição, aparentemente na Figura 3 deveria ter uma transição de
 > revoked  para accepted.
 
@@ -80,7 +86,26 @@ Há uma seta bi-direcional entre os dois estados.
 > It is strange that known techniques like EigenTrust are not even mentioned,
 > even though we are in the blockchain domain.
 
-TODO
+We added a new paragraph at the end of Section 4 (Related Work), as follows:
+
+> Some works for P2P file sharing propose to account the reputation of peers to
+> form a web of trust based on their behavior
+> history~\cite{p2p.rep.wang,p2p.rep.eigentrust}.
+> However, there are three key aspects in terms of scope that distinguishes our
+> reputation system: its focus on the contents, its subjective nature, and its
+> dependency on consensus.
+> First, it is the actual contents that are stored and evaluated in the forums,
+> with the identities being a secondary attribute.
+> Second, content evaluation is subjective, as well as any decision to revoke
+> posts or to fork forums.
+> Third, at any given point in time, peers must agree on a common forum DAG
+> prefix with global and deterministic accuracy to act identically as a whole.
+> In this case, consensus is fundamental, since a subtle off-by-one discrepancy
+> in reputation creates an irreconcilable fork in the network.
+> Achieving consensus on a permissionless network is the key contribution of this
+> work.
+
+-------------------------------------------------------------------------------
 
 > We do not know if the results are good or bad because there was no comparison
 > to the state of the art or baseline.
@@ -96,6 +121,8 @@ We added the following remark at the beginning of Section 3.1:
 > The main goal of this section is to stress the consensus algorithm to show
 > that permissionless public forums are viable, regardless of the inherent
 > slower performance in comparison to permissioned protocols.
+
+-------------------------------------------------------------------------------
 
 > Also, at the end of the day, we do not know if the proposal is resistant to
 > Sybil attacks because there was no validation of the consensus and reputation
@@ -143,6 +170,8 @@ for extremists".
 But we also believe that a protocol that is tamper proof, and provides
 persistence and data transparency can actually support law enforcement.
 
+-------------------------------------------------------------------------------
+
 > Maybe a way to go is to create a pool of super-reputations that could answer
 > to injunctions and administratively remove the content and a measure to avoid
 > illegal content being broadcasted in subverted grupus.
@@ -152,6 +181,8 @@ provides hard forks, as discussed in the middle of Section 2.2:
 
 > More than simple numeric disputes, a hard fork represents a social conflict
 > in which reconciling branches is no longer possible.
+
+-------------------------------------------------------------------------------
 
 > The paper is too descriptive, so reading sometime is tiresome.
 > ...
