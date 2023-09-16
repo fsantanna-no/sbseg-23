@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.presentation">
- <office:meta><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1738</meta:editing-cycles><meta:editing-duration>P82DT1H3M40S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2023-09-12T11:15:51.241198683</dc:date><meta:document-statistic meta:object-count="292"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../../../uerj/EDL/usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
+ <office:meta><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:creation-date>2011-05-24T14:40:40</meta:creation-date><dc:language>fi-FI</dc:language><meta:editing-cycles>1740</meta:editing-cycles><meta:editing-duration>P86DT19M53S</meta:editing-duration><meta:initial-creator>chico </meta:initial-creator><dc:date>2023-09-16T20:55:18.288266545</dc:date><meta:document-statistic meta:object-count="294"/><meta:user-defined meta:name="Info 1"/><meta:user-defined meta:name="Info 2"/><meta:user-defined meta:name="Info 3"/><meta:user-defined meta:name="Info 4"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="" xlink:href="../../../uerj/EDL/usr/lib/openoffice/basis3.2/share/template/en-US/presnt/Orange.otp"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
-   <config:config-item config:name="VisibleAreaLeft" config:type="int">0</config:config-item>
-   <config:config-item config:name="VisibleAreaWidth" config:type="int">49107</config:config-item>
-   <config:config-item config:name="VisibleAreaHeight" config:type="int">24209</config:config-item>
+   <config:config-item config:name="VisibleAreaTop" config:type="int">-1118</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">-411</config:config-item>
+   <config:config-item config:name="VisibleAreaWidth" config:type="int">28990</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">23334</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
@@ -29,16 +29,16 @@
      <config:config-item config:name="NoColors" config:type="boolean">true</config:config-item>
      <config:config-item config:name="RulerIsVisible" config:type="boolean">false</config:config-item>
      <config:config-item config:name="PageKind" config:type="short">0</config:config-item>
-     <config:config-item config:name="SelectedPage" config:type="short">16</config:config-item>
+     <config:config-item config:name="SelectedPage" config:type="short">10</config:config-item>
      <config:config-item config:name="IsLayerMode" config:type="boolean">false</config:config-item>
      <config:config-item config:name="IsDoubleClickTextEdit" config:type="boolean">true</config:config-item>
      <config:config-item config:name="IsClickChangeRotation" config:type="boolean">true</config:config-item>
      <config:config-item config:name="SlidesPerRow" config:type="short">4</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleAreaTop" config:type="int">-313</config:config-item>
-     <config:config-item config:name="VisibleAreaLeft" config:type="int">-3945</config:config-item>
-     <config:config-item config:name="VisibleAreaWidth" config:type="int">36032</config:config-item>
-     <config:config-item config:name="VisibleAreaHeight" config:type="int">21721</config:config-item>
+     <config:config-item config:name="VisibleAreaTop" config:type="int">-1118</config:config-item>
+     <config:config-item config:name="VisibleAreaLeft" config:type="int">-411</config:config-item>
+     <config:config-item config:name="VisibleAreaWidth" config:type="int">28991</config:config-item>
+     <config:config-item config:name="VisibleAreaHeight" config:type="int">23335</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">2540</config:config-item>
      <config:config-item config:name="GridCoarseHeight" config:type="int">2540</config:config-item>
      <config:config-item config:name="GridFineWidth" config:type="int">254</config:config-item>
@@ -126,9 +126,9 @@
    <config:config-item config:name="ParagraphSummation" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintQuality" config:type="int">0</config:config-item>
    <config:config-item config:name="PrinterIndependentLayout" config:type="string">low-resolution</config:config-item>
-   <config:config-item config:name="PrinterName" config:type="string">Brother_DCP_B7520DW_series</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string">HP_LaserJet_M203dw_ABDF0C</config:config-item>
    <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">nwH+/0Jyb3RoZXJfRENQX0I3NTIwRFdfc2VyaWVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpCcm90aGVyX0RDUF9CNzUyMERXX3NlcmllcwAWAAMAwAAAAAAAAAAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9QnJvdGhlcl9EQ1BfQjc1MjBEV19zZXJpZXMKb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5hZGp1c3RtZW50PTAsMCwwLDAKY29sb3JkZXB0aD0yNApwc2xldmVsPTAKcGRmZGV2aWNlPTEKY29sb3JkZXZpY2U9MApQUERDb250ZXh0RGF0YQpQYWdlU2l6ZTpBNAAAEgBDT01QQVRfRFVQTEVYX01PREUPAER1cGxleE1vZGU6Ok9mZg==</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">rgH+/0hQX0xhc2VySmV0X00yMDNkd19BQkRGMEMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpIUF9MYXNlckpldF9NMjAzZHdfQUJERjBDAAAWAAMAzwAAAAAAAAAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SFBfTGFzZXJKZXRfTTIwM2R3X0FCREYwQwpvcmllbnRhdGlvbj1Qb3J0cmFpdApjb3BpZXM9MQpjb2xsYXRlPWZhbHNlCm1hcmdpbmFkanVzdG1lbnQ9MCwwLDAsMApjb2xvcmRlcHRoPTI0CnBzbGV2ZWw9MApwZGZkZXZpY2U9MQpjb2xvcmRldmljZT0wClBQRENvbnRleHREYXRhCkNvbG9yTW9kZWw6R3JheQBQYWdlU2l6ZTpBNAAAEgBDT01QQVRfRFVQTEVYX01PREUPAER1cGxleE1vZGU6Ok9mZg==</config:config-item>
    <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SlidesPerHandout" config:type="short">6</config:config-item>
@@ -143,17 +143,17 @@
   </office:script>
  </office:scripts>
  <office:font-face-decls>
-  <style:font-face style:name="Arial" svg:font-family="Arial" style:font-family-generic="modern" style:font-pitch="variable"/>
-  <style:font-face style:name="Arial1" svg:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable"/>
-  <style:font-face style:name="Arial2" svg:font-family="Arial" style:font-pitch="variable"/>
-  <style:font-face style:name="Arial3" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Arial" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="Arial1" svg:font-family="Arial" style:font-pitch="variable"/>
+  <style:font-face style:name="Arial2" svg:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable"/>
+  <style:font-face style:name="Arial3" svg:font-family="Arial" style:font-family-generic="modern" style:font-pitch="variable"/>
   <style:font-face style:name="Arial4" svg:font-family="Arial" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Bitstream Vera Sans" svg:font-family="&apos;Bitstream Vera Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Courier 10 Pitch" svg:font-family="&apos;Courier 10 Pitch&apos;" style:font-pitch="variable"/>
   <style:font-face style:name="Courier 10 Pitch1" svg:font-family="&apos;Courier 10 Pitch&apos;" style:font-pitch="fixed"/>
   <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
-  <style:font-face style:name="DejaVu Sans Mono" svg:font-family="&apos;DejaVu Sans Mono&apos;" style:font-family-generic="modern" style:font-pitch="variable"/>
-  <style:font-face style:name="DejaVu Sans Mono1" svg:font-family="&apos;DejaVu Sans Mono&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+  <style:font-face style:name="DejaVu Sans Mono" svg:font-family="&apos;DejaVu Sans Mono&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
+  <style:font-face style:name="DejaVu Sans Mono1" svg:font-family="&apos;DejaVu Sans Mono&apos;" style:font-family-generic="modern" style:font-pitch="variable"/>
   <style:font-face style:name="HG Mincho Light J" svg:font-family="&apos;HG Mincho Light J&apos;" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Sans1" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
@@ -163,8 +163,8 @@
   <style:font-face style:name="Noto Sans" svg:font-family="&apos;Noto Sans&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Noto Sans CJK SC" svg:font-family="&apos;Noto Sans CJK SC&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Noto Sans Mono CJK JP" svg:font-family="&apos;Noto Sans Mono CJK JP&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
-  <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol" style:font-pitch="variable"/>
-  <style:font-face style:name="OpenSymbol1" svg:font-family="OpenSymbol"/>
+  <style:font-face style:name="OpenSymbol" svg:font-family="OpenSymbol"/>
+  <style:font-face style:name="OpenSymbol1" svg:font-family="OpenSymbol" style:font-pitch="variable"/>
   <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Times New Roman1" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
  </office:font-face-decls>
@@ -525,7 +525,7 @@
   <draw:marker draw:name="Arrowheads_20_3" draw:display-name="Arrowheads 3" svg:viewBox="0 0 20 20" svg:d="M0 20l10-20 10 20z"/>
   <draw:marker draw:name="Arrowheads_20_4" draw:display-name="Arrowheads 4" svg:viewBox="0 0 20 13" svg:d="M0 13l10-13 10 13z"/>
   <draw:marker draw:name="Arrowheads_20_5" draw:display-name="Arrowheads 5" svg:viewBox="0 0 20 13" svg:d="M0 13l10-13 10 13z"/>
-  <draw:marker draw:name="Arrowheads_20_6" draw:display-name="Arrowheads 6" svg:viewBox="0 7 20 13" svg:d="M0 20l10-13 10 13z"/>
+  <draw:marker draw:name="Arrowheads_20_6" draw:display-name="Arrowheads 6" svg:viewBox="0 0 20 13" svg:d="M0 13l10-13 10 13z"/>
   <draw:marker draw:name="Rounded_20_short_20_Arrow" draw:display-name="Rounded short Arrow" svg:viewBox="0 0 1013 1130" svg:d="M1009 1050l-449-1008-22-30-29-12-34 12-21 26-449 1012-5 13v8l5 21 12 21 17 13 21 4h903l21-4 21-13 9-21 4-21v-8z"/>
   <draw:marker draw:name="Symmetric_20_Arrow" draw:display-name="Symmetric Arrow" svg:viewBox="0 0 1131 902" svg:d="M564 0l-564 902h1131z"/>
   <draw:stroke-dash draw:name="Dashed_20__28_var_29_" draw:display-name="Dashed (var)" draw:style="rect" draw:dots1="1" draw:dots1-length="197%" draw:distance="127%"/>
@@ -536,10 +536,10 @@
   <draw:stroke-dash draw:name="Ultrafine_20_Dashed" draw:display-name="Ultrafine Dashed" draw:style="rect" draw:dots1="1" draw:dots1-length="0.051cm" draw:dots2="1" draw:dots2-length="0.051cm" draw:distance="0.051cm"/>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#000000" draw:fill-color="#99ccff" fo:wrap-option="no-wrap"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Times New Roman1" fo:font-size="24pt" fo:language="en" fo:country="US" style:font-name-asian="Arial2" style:font-size-asian="24pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial2" style:font-size-complex="24pt" style:language-complex="zxx" style:country-complex="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Times New Roman1" fo:font-size="24pt" fo:language="en" fo:country="US" style:font-name-asian="Arial1" style:font-size-asian="24pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial1" style:font-size-complex="24pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:default-style>
   <style:style style:name="standard" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -587,7 +587,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="objectwithoutfill" style:family="graphic">
    <style:graphic-properties draw:fill="none"/>
@@ -871,7 +871,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_2" style:display-name="Default_2" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -919,7 +919,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_3" style:display-name="Default_3" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -967,7 +967,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_4" style:display-name="Default_4" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -1015,7 +1015,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_5" style:display-name="Default_5" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -1063,7 +1063,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_5_5f_1" style:display-name="Default_5_1" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -1111,7 +1111,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_6" style:display-name="Default_6" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -1159,7 +1159,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_7" style:display-name="Default_7" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -1207,7 +1207,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Default_5f_6_5f_1" style:display-name="Default_6_1" style:family="graphic">
    <style:graphic-properties draw:stroke="solid" svg:stroke-width="0cm" svg:stroke-color="#000000" draw:marker-start-width="0.3cm" draw:marker-start-center="false" draw:marker-end-width="0.3cm" draw:marker-end-center="false" draw:fill="solid" draw:fill-color="#99ccff" fo:padding-top="0.125cm" fo:padding-bottom="0.125cm" fo:padding-left="0.25cm" fo:padding-right="0.25cm" draw:shadow="hidden" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:shadow-color="#808080">
@@ -1255,7 +1255,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="18pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi-background" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none"/>
@@ -1309,7 +1309,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0.6cm" fo:margin-right="0cm" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="20pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="20pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="20pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="20pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="20pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="20pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi-outline1" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none">
@@ -1357,7 +1357,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="1.2cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.5cm" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-family="&apos;Nimbus Roman No9 L&apos;" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-family="&apos;Nimbus Roman No9 L&apos;" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi-outline2" style:family="presentation" style:parent-style-name="oranssi-outline1">
    <style:paragraph-properties fo:margin-left="2.4cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.4cm" fo:text-indent="0cm"/>
@@ -1437,7 +1437,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi-title" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-color="#f57900" draw:fill-image-width="0cm" draw:fill-image-height="0cm" draw:textarea-vertical-align="middle">
@@ -1485,7 +1485,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties fo:color="#f57900" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Bitstream Vera Sans" fo:font-family="&apos;Bitstream Vera Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="44pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="44pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="44pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties fo:color="#f57900" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Bitstream Vera Sans" fo:font-family="&apos;Bitstream Vera Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="44pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="44pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="44pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Human-background" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="bitmap" draw:fill-image-name="human_5f_backgound_5f_neutral" draw:fill-image-width="100%" draw:fill-image-height="100%"/>
@@ -1539,7 +1539,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0.6cm" fo:margin-right="0cm" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="20pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="20pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="20pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="20pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="20pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="20pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Human-outline1" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-image-width="0cm" draw:fill-image-height="0cm">
@@ -1587,7 +1587,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.5cm" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Human-outline2" style:family="presentation" style:parent-style-name="Human-outline1">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.4cm" fo:text-indent="0cm"/>
@@ -1667,7 +1667,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="Human-title" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none" draw:textarea-vertical-align="middle">
@@ -1715,7 +1715,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties fo:color="#ffffff" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="44pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="44pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="44pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties fo:color="#ffffff" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="44pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-name-asian="DejaVu Sans" style:font-family-asian="&apos;DejaVu Sans&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="44pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="DejaVu Sans" style:font-family-complex="&apos;DejaVu Sans&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="44pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi_5f_-background" style:display-name="oranssi_-background" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none"/>
@@ -1769,7 +1769,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0.6cm" fo:margin-right="0cm" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="20pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="20pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="20pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="20pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="20pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="20pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi_5f_-outline1" style:display-name="oranssi_-outline1" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none">
@@ -1817,7 +1817,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="1.2cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.5cm" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-family="&apos;Nimbus Roman No9 L&apos;" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-family="&apos;Nimbus Roman No9 L&apos;" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi_5f_-outline2" style:display-name="oranssi_-outline2" style:family="presentation" style:parent-style-name="oranssi_5f_-outline1">
    <style:paragraph-properties fo:margin-left="2.4cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0.4cm" fo:text-indent="0cm"/>
@@ -1897,7 +1897,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" fo:text-indent="0cm"/>
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial1" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Arial2" fo:font-family="Arial" style:font-family-generic="roman" style:font-pitch="variable" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="oranssi_5f_-title" style:display-name="oranssi_-title" style:family="presentation">
    <style:graphic-properties draw:stroke="none" draw:fill="none" draw:fill-color="#f57900" draw:fill-image-width="0cm" draw:fill-image-height="0cm" draw:textarea-vertical-align="middle">
@@ -1945,7 +1945,7 @@
     </text:list-style>
    </style:graphic-properties>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties fo:color="#f57900" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Bitstream Vera Sans" fo:font-family="&apos;Bitstream Vera Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="44pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="44pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="44pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties fo:color="#f57900" loext:opacity="100%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Bitstream Vera Sans" fo:font-family="&apos;Bitstream Vera Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="44pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:font-name-asian="HG Mincho Light J" style:font-family-asian="&apos;HG Mincho Light J&apos;" style:font-pitch-asian="variable" style:font-size-asian="44pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-family-complex="Arial" style:font-pitch-complex="variable" style:font-size-complex="44pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:presentation-page-layout style:name="AL0T31">
    <presentation:placeholder presentation:object="handout" svg:x="2.058cm" svg:y="1.743cm" svg:width="6.104cm" svg:height="-0.231cm"/>
@@ -2219,6 +2219,9 @@
   </style:style>
   <style:style style:name="gr62" style:family="graphic" style:parent-style-name="objectwithoutfill">
    <style:graphic-properties draw:stroke="dash" draw:stroke-dash="Long_20_Dot" draw:marker-start="Arrowheads_20_6" draw:marker-end="" draw:fill="none" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle"/>
+  </style:style>
+  <style:style style:name="gr63" style:family="graphic" style:parent-style-name="Object_20_with_20_no_20_fill_20_and_20_no_20_line">
+   <style:graphic-properties draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle" draw:color-mode="standard" draw:luminance="0%" draw:contrast="0%" draw:gamma="100%" draw:red="0%" draw:green="0%" draw:blue="0%" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:image-opacity="100%" style:mirror="none"/>
   </style:style>
   <style:style style:name="pr1" style:family="presentation" style:parent-style-name="oranssi-backgroundobjects">
    <style:graphic-properties draw:stroke="none" draw:fill="gradient" draw:fill-gradient-name="Gradient_20_7" draw:textarea-horizontal-align="center" draw:textarea-vertical-align="middle"/>
@@ -2631,7 +2634,7 @@
    <style:text-properties fo:font-size="28pt" fo:language="pt" fo:country="BR" fo:font-style="normal" fo:font-weight="normal" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T4" style:family="text">
-   <style:text-properties style:font-name="DejaVu Sans Mono1" fo:font-size="18pt" fo:language="pt" fo:country="BR" fo:font-style="normal" fo:font-weight="normal" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
+   <style:text-properties style:font-name="DejaVu Sans Mono" fo:font-size="18pt" fo:language="pt" fo:country="BR" fo:font-style="normal" fo:font-weight="normal" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T5" style:family="text">
    <style:text-properties style:font-name="Liberation Sans1" fo:font-size="16pt" fo:font-style="normal" style:font-size-asian="16pt" style:font-style-asian="normal" style:font-size-complex="16pt" style:font-style-complex="normal"/>
@@ -2652,16 +2655,16 @@
    <style:text-properties fo:font-size="24pt" fo:font-weight="bold" style:font-size-asian="24pt" style:font-weight-asian="bold" style:font-size-complex="24pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T11" style:family="text">
-   <style:text-properties fo:color="#00a65d" loext:opacity="100%" style:font-name="OpenSymbol1" fo:font-size="24pt" style:font-name-asian="OpenSymbol1" style:font-name-complex="OpenSymbol1"/>
+   <style:text-properties fo:color="#00a65d" loext:opacity="100%" style:font-name="OpenSymbol" fo:font-size="24pt" style:font-name-asian="OpenSymbol" style:font-name-complex="OpenSymbol"/>
   </style:style>
   <style:style style:name="T12" style:family="text">
    <style:text-properties fo:font-size="18pt" fo:language="pt" fo:country="BR" fo:font-style="normal" fo:font-weight="bold" style:font-size-asian="18pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-size-complex="18pt" style:font-style-complex="normal" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T13" style:family="text">
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-size="32pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-size-asian="32pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-size-complex="32pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="T14" style:family="text">
-   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial2" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
+   <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Nimbus Roman No9 L" fo:font-size="28pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:font-name-asian="HG Mincho Light J" style:font-size-asian="28pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Arial1" style:font-size-complex="28pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none"/>
   </style:style>
   <style:style style:name="T15" style:family="text">
    <style:text-properties style:font-name="Nimbus Roman No9 L1" fo:font-size="32pt" style:font-size-asian="32pt" style:font-size-complex="32pt"/>
@@ -2670,10 +2673,10 @@
    <style:text-properties fo:font-size="16pt" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
   </style:style>
   <style:style style:name="T17" style:family="text">
-   <style:text-properties style:font-name="DejaVu Sans Mono1" fo:font-size="11pt" style:font-size-asian="11pt" style:font-size-complex="11pt"/>
+   <style:text-properties style:font-name="DejaVu Sans Mono" fo:font-size="11pt" style:font-size-asian="11pt" style:font-size-complex="11pt"/>
   </style:style>
   <style:style style:name="T18" style:family="text">
-   <style:text-properties fo:color="#ff0000" loext:opacity="100%" style:font-name="DejaVu Sans Mono1" fo:font-size="11pt" style:font-size-asian="11pt" style:font-size-complex="11pt"/>
+   <style:text-properties fo:color="#ff0000" loext:opacity="100%" style:font-name="DejaVu Sans Mono" fo:font-size="11pt" style:font-size-asian="11pt" style:font-size-complex="11pt"/>
   </style:style>
   <style:style style:name="T19" style:family="text">
    <style:text-properties fo:color="#ff0000" loext:opacity="100%"/>
@@ -2685,10 +2688,10 @@
    <style:text-properties fo:color="#ff0000" loext:opacity="100%" fo:font-size="16pt" style:font-size-asian="16pt" style:font-size-complex="16pt"/>
   </style:style>
   <style:style style:name="T22" style:family="text">
-   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="DejaVu Sans Mono1" fo:font-size="11pt" style:font-size-asian="11pt" style:font-size-complex="11pt"/>
+   <style:text-properties fo:color="#000000" loext:opacity="100%" style:font-name="DejaVu Sans Mono" fo:font-size="11pt" style:font-size-asian="11pt" style:font-size-complex="11pt"/>
   </style:style>
   <style:style style:name="T23" style:family="text">
-   <style:text-properties style:font-name="DejaVu Sans Mono1" fo:font-size="16pt" fo:font-style="italic" style:font-size-asian="16pt" style:font-style-asian="italic" style:font-size-complex="16pt" style:font-style-complex="italic"/>
+   <style:text-properties style:font-name="DejaVu Sans Mono" fo:font-size="16pt" fo:font-style="italic" style:font-size-asian="16pt" style:font-style-asian="italic" style:font-size-complex="16pt" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T24" style:family="text">
    <style:text-properties fo:font-size="16pt" fo:font-style="italic" fo:font-weight="normal" style:font-size-asian="16pt" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-size-complex="16pt" style:font-style-complex="italic" style:font-weight-complex="normal"/>
@@ -3417,14 +3420,14 @@
     </draw:custom-shape>
     <draw:frame presentation:style-name="pr18" draw:text-style-name="P21" draw:layer="layout" svg:width="25.199cm" svg:height="5.209cm" svg:x="1.501cm" svg:y="1.19cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T2">Peer-to-Peer </text:span><text:span text:style-name="T2">Permissionle</text:span><text:span text:style-name="T2">ss </text:span><text:span text:style-name="T2">Consensus </text:span><text:span text:style-name="T2">via </text:span><text:span text:style-name="T2">Reputation</text:span></text:p>
+      <text:p><text:span text:style-name="T2">P</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">r</text:span><text:span text:style-name="T2">-</text:span><text:span text:style-name="T2">t</text:span><text:span text:style-name="T2">o</text:span><text:span text:style-name="T2">-</text:span><text:span text:style-name="T2">P</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">r</text:span><text:span text:style-name="T2"> </text:span><text:span text:style-name="T2">P</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">r</text:span><text:span text:style-name="T2">m</text:span><text:span text:style-name="T2">i</text:span><text:span text:style-name="T2">s</text:span><text:span text:style-name="T2">s</text:span><text:span text:style-name="T2">i</text:span><text:span text:style-name="T2">o</text:span><text:span text:style-name="T2">n</text:span><text:span text:style-name="T2">l</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">s</text:span><text:span text:style-name="T2">s</text:span><text:span text:style-name="T2"> </text:span><text:span text:style-name="T2">C</text:span><text:span text:style-name="T2">o</text:span><text:span text:style-name="T2">n</text:span><text:span text:style-name="T2">s</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">n</text:span><text:span text:style-name="T2">s</text:span><text:span text:style-name="T2">u</text:span><text:span text:style-name="T2">s</text:span><text:span text:style-name="T2"> </text:span><text:span text:style-name="T2">v</text:span><text:span text:style-name="T2">i</text:span><text:span text:style-name="T2">a</text:span><text:span text:style-name="T2"> </text:span><text:span text:style-name="T2">R</text:span><text:span text:style-name="T2">e</text:span><text:span text:style-name="T2">p</text:span><text:span text:style-name="T2">u</text:span><text:span text:style-name="T2">t</text:span><text:span text:style-name="T2">a</text:span><text:span text:style-name="T2">t</text:span><text:span text:style-name="T2">i</text:span><text:span text:style-name="T2">o</text:span><text:span text:style-name="T2">n</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr4" draw:text-style-name="P23" draw:layer="layout" svg:width="16.589cm" svg:height="3.03cm" svg:x="2.745cm" svg:y="16.272cm">
      <draw:text-box>
-      <text:p text:style-name="P22"><text:span text:style-name="T3">Francisco Sant&apos;Anna</text:span></text:p>
-      <text:p text:style-name="P22"><text:span text:style-name="T4">francisco@ime.uerj.br</text:span></text:p>
-      <text:p text:style-name="P22"><text:span text:style-name="T4"><text:s text:c="2"/></text:span><text:span text:style-name="T4">@_fsantanna</text:span></text:p>
+      <text:p text:style-name="P22"><text:span text:style-name="T3">F</text:span><text:span text:style-name="T3">r</text:span><text:span text:style-name="T3">a</text:span><text:span text:style-name="T3">n</text:span><text:span text:style-name="T3">c</text:span><text:span text:style-name="T3">i</text:span><text:span text:style-name="T3">s</text:span><text:span text:style-name="T3">c</text:span><text:span text:style-name="T3">o</text:span><text:span text:style-name="T3"> </text:span><text:span text:style-name="T3">S</text:span><text:span text:style-name="T3">a</text:span><text:span text:style-name="T3">n</text:span><text:span text:style-name="T3">t</text:span><text:span text:style-name="T3">&apos;</text:span><text:span text:style-name="T3">A</text:span><text:span text:style-name="T3">n</text:span><text:span text:style-name="T3">n</text:span><text:span text:style-name="T3">a</text:span></text:p>
+      <text:p text:style-name="P22"><text:span text:style-name="T4">f</text:span><text:span text:style-name="T4">r</text:span><text:span text:style-name="T4">a</text:span><text:span text:style-name="T4">n</text:span><text:span text:style-name="T4">c</text:span><text:span text:style-name="T4">i</text:span><text:span text:style-name="T4">s</text:span><text:span text:style-name="T4">c</text:span><text:span text:style-name="T4">o</text:span><text:span text:style-name="T4">@</text:span><text:span text:style-name="T4">i</text:span><text:span text:style-name="T4">m</text:span><text:span text:style-name="T4">e</text:span><text:span text:style-name="T4">.</text:span><text:span text:style-name="T4">u</text:span><text:span text:style-name="T4">e</text:span><text:span text:style-name="T4">r</text:span><text:span text:style-name="T4">j</text:span><text:span text:style-name="T4">.</text:span><text:span text:style-name="T4">b</text:span><text:span text:style-name="T4">r</text:span></text:p>
+      <text:p text:style-name="P22"><text:span text:style-name="T4"><text:s/></text:span><text:span text:style-name="T4"><text:s/></text:span><text:span text:style-name="T4">@</text:span><text:span text:style-name="T4">_</text:span><text:span text:style-name="T4">f</text:span><text:span text:style-name="T4">s</text:span><text:span text:style-name="T4">a</text:span><text:span text:style-name="T4">n</text:span><text:span text:style-name="T4">t</text:span><text:span text:style-name="T4">a</text:span><text:span text:style-name="T4">n</text:span><text:span text:style-name="T4">n</text:span><text:span text:style-name="T4">a</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="3.81cm" svg:height="4.166cm" svg:x="21.445cm" svg:y="15.229cm">
@@ -4427,7 +4430,7 @@
     </draw:frame>
     <draw:frame draw:style-name="gr6" draw:text-style-name="P26" draw:layer="layout" svg:width="6.209cm" svg:height="0.878cm" svg:x="10.916cm" svg:y="13.492cm">
      <draw:text-box>
-      <text:p text:style-name="P25"><text:span text:style-name="T5">github.com/Freechains</text:span></text:p>
+      <text:p text:style-name="P25"><text:span text:style-name="T5">g</text:span><text:span text:style-name="T5">i</text:span><text:span text:style-name="T5">t</text:span><text:span text:style-name="T5">h</text:span><text:span text:style-name="T5">u</text:span><text:span text:style-name="T5">b</text:span><text:span text:style-name="T5">.</text:span><text:span text:style-name="T5">c</text:span><text:span text:style-name="T5">o</text:span><text:span text:style-name="T5">m</text:span><text:span text:style-name="T5">/</text:span><text:span text:style-name="T5">F</text:span><text:span text:style-name="T5">r</text:span><text:span text:style-name="T5">e</text:span><text:span text:style-name="T5">e</text:span><text:span text:style-name="T5">c</text:span><text:span text:style-name="T5">h</text:span><text:span text:style-name="T5">a</text:span><text:span text:style-name="T5">i</text:span><text:span text:style-name="T5">n</text:span><text:span text:style-name="T5">s</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="0.635cm" svg:height="0.635cm" svg:x="3.023cm" svg:y="18.542cm">
@@ -4608,6 +4611,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page2" draw:style-name="dp4" draw:master-page-name="oranssi_5f_" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr20" draw:text-style-name="P29" draw:layer="layout" svg:width="25.199cm" svg:height="9.722cm" svg:x="0.6cm" svg:y="5.639cm" presentation:class="outline" presentation:user-transformed="true">
      <draw:text-box>
       <text:list text:style-name="L3">
@@ -7559,7 +7563,7 @@
     </draw:frame>
     <draw:frame presentation:style-name="pr21" draw:text-style-name="P32" draw:layer="layout" svg:width="16.319cm" svg:height="3.506cm" svg:x="0.7cm" svg:y="1.131cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p text:style-name="P31"><text:span text:style-name="T8">Peer-to-Peer Permissionless Consensus via </text:span><text:span text:style-name="T8">Reputation</text:span></text:p>
+      <text:p text:style-name="P31"><text:span text:style-name="T8">P</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">r</text:span><text:span text:style-name="T8">-</text:span><text:span text:style-name="T8">t</text:span><text:span text:style-name="T8">o</text:span><text:span text:style-name="T8">-</text:span><text:span text:style-name="T8">P</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">r</text:span><text:span text:style-name="T8"> </text:span><text:span text:style-name="T8">P</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">r</text:span><text:span text:style-name="T8">m</text:span><text:span text:style-name="T8">i</text:span><text:span text:style-name="T8">s</text:span><text:span text:style-name="T8">s</text:span><text:span text:style-name="T8">i</text:span><text:span text:style-name="T8">o</text:span><text:span text:style-name="T8">n</text:span><text:span text:style-name="T8">l</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">s</text:span><text:span text:style-name="T8">s</text:span><text:span text:style-name="T8"> </text:span><text:span text:style-name="T8">C</text:span><text:span text:style-name="T8">o</text:span><text:span text:style-name="T8">n</text:span><text:span text:style-name="T8">s</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">n</text:span><text:span text:style-name="T8">s</text:span><text:span text:style-name="T8">u</text:span><text:span text:style-name="T8">s</text:span><text:span text:style-name="T8"> </text:span><text:span text:style-name="T8">v</text:span><text:span text:style-name="T8">i</text:span><text:span text:style-name="T8">a</text:span><text:span text:style-name="T8"> </text:span><text:span text:style-name="T8">R</text:span><text:span text:style-name="T8">e</text:span><text:span text:style-name="T8">p</text:span><text:span text:style-name="T8">u</text:span><text:span text:style-name="T8">t</text:span><text:span text:style-name="T8">a</text:span><text:span text:style-name="T8">t</text:span><text:span text:style-name="T8">i</text:span><text:span text:style-name="T8">o</text:span><text:span text:style-name="T8">n</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame presentation:style-name="pr22" draw:text-style-name="P33" xml:id="id3" draw:id="id3" draw:layer="layout" svg:width="1.004cm" svg:height="0.937cm" svg:x="22.68cm" svg:y="3.009cm">
@@ -8627,7 +8631,7 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:custom-shape draw:style-name="gr11" draw:text-style-name="P42" xml:id="id28" draw:id="id28" draw:layer="layout" svg:width="1.239cm" svg:height="1.029cm" svg:x="18.935cm" svg:y="11.69cm">
+    <draw:custom-shape draw:style-name="gr11" draw:text-style-name="P42" xml:id="id28" draw:id="id28" draw:layer="layout" svg:width="1.239cm" svg:height="1.029cm" svg:x="18.933cm" svg:y="11.69cm">
      <text:p/>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:mirror-horizontal="true" draw:text-areas="0 ?f0 ?f5 ?f2" draw:type="right-arrow" draw:modifiers="16200 5400" draw:enhanced-path="M 0 ?f0 L ?f1 ?f0 ?f1 0 21600 10800 ?f1 21600 ?f1 ?f2 0 ?f2 Z N">
       <draw:equation draw:name="f0" draw:formula="$1 "/>
@@ -8747,6 +8751,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page4" draw:style-name="dp4" draw:master-page-name="oranssi_5f_" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr24" draw:text-style-name="P35" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title">
      <draw:text-box>
       <text:p>Parallel with Bitcoin</text:p>
@@ -8787,7 +8792,7 @@
       <text:p text:style-name="P45"><text:span text:style-name="T15">How to prevent double spending?</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:path draw:style-name="gr12" draw:text-style-name="P24" xml:id="id36" draw:id="id36" draw:layer="layout" svg:width="3.142cm" svg:height="7.435cm" draw:transform="skewX (7.96969665720487E-017) rotate (-2.42408779809492) translate (7.60702867959362cm 14.8864246188823cm)" svg:viewBox="0 0 3143 7436" svg:d="M0 7436c5012 0 2527-7436 2527-7436">
+    <draw:path draw:style-name="gr12" draw:text-style-name="P24" xml:id="id36" draw:id="id36" draw:layer="layout" svg:width="3.142cm" svg:height="7.435cm" draw:transform="skewX (7.96969665720487E-017) rotate (-2.42408779809492) translate (7.6070286795936cm 14.8864246188823cm)" svg:viewBox="0 0 3143 7436" svg:d="M0 7436c5012 0 2527-7436 2527-7436">
      <text:p/>
     </draw:path>
     <draw:path draw:style-name="gr12" draw:text-style-name="P24" xml:id="id37" draw:id="id37" draw:layer="layout" svg:width="3.559cm" svg:height="2.902cm" draw:transform="rotate (0.622384411261178) translate (20.6053792510449cm 14.7349954044489cm)" svg:viewBox="0 0 3560 2903" svg:d="M0 2903c4113 0 3532-2903 3532-2903">
@@ -8856,6 +8861,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page5" draw:style-name="dp4" draw:master-page-name="oranssi_5f_" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr24" draw:text-style-name="P35" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p>Forums are DAGs</text:p>
@@ -9319,6 +9325,7 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page6" draw:style-name="dp4" draw:master-page-name="oranssi_5f_" presentation:presentation-page-layout-name="AL2T1">
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr24" draw:text-style-name="P35" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p>(?) DAGs → Consensus (?)</text:p>
@@ -9373,7 +9380,7 @@
     <draw:polyline draw:style-name="gr13" draw:text-style-name="P24" xml:id="id79" draw:id="id79" draw:layer="layout" svg:width="8.432cm" svg:height="0cm" svg:x="15.245cm" svg:y="8.13cm" svg:viewBox="0 0 8433 0" draw:points="8433,0 0,0">
      <text:p/>
     </draw:polyline>
-    <draw:path draw:style-name="gr30" draw:text-style-name="P54" xml:id="id77" draw:id="id77" draw:layer="layout" svg:width="9.479cm" svg:height="8.317cm" draw:transform="skewX (-0.00471238898038469) rotate (-0.00471238898038553) translate (13.9750651010842cm 3.90765510392982cm)" svg:viewBox="0 0 9480 8318" svg:d="M7275 25c-269 137-569 112-850 73-315-44-526 159-756 296-294 175-714 155-897 467-184 315-485 353-755 467-276 117-576 0-851 74-296 79-594 107-897 171-269 58-670 27-731 419-47 306-92 621-71 934 25 366 508 456 425 860-65 324 439 727-24 935-295 132-608 204-944 220-340 17-542 263-802 517-213 207-103 616 0 909 122 352 549 396 802 616 247 214 584 149 873 245 302 100 506 80 803 197 341 134 677 250 1015 369 342 120 685 211 1040 319 331 101 692-19 1038 49 272 53 549 67 827 99 298 34 596 75 897 49 293-26 592-54 873-173 306-129 527-393 684-688 172-323 220-676 355-1008 106-261 76-557 94-836 16-255 1-511 25-762 27-289 43-576 23-861-20-295-25-593-142-885-102-255-110-542-165-811-67-325-6-696-165-983-163-294-238-563-497-811-234-225-478-484-802-492h-23z">
+    <draw:path draw:style-name="gr30" draw:text-style-name="P54" xml:id="id77" draw:id="id77" draw:layer="layout" svg:width="9.479cm" svg:height="8.317cm" draw:transform="skewX (-0.00471238898038469) rotate (-0.00471238898038553) translate (13.9750651010842cm 3.90765510392983cm)" svg:viewBox="0 0 9480 8318" svg:d="M7275 25c-269 137-569 112-850 73-315-44-526 159-756 296-294 175-714 155-897 467-184 315-485 353-755 467-276 117-576 0-851 74-296 79-594 107-897 171-269 58-670 27-731 419-47 306-92 621-71 934 25 366 508 456 425 860-65 324 439 727-24 935-295 132-608 204-944 220-340 17-542 263-802 517-213 207-103 616 0 909 122 352 549 396 802 616 247 214 584 149 873 245 302 100 506 80 803 197 341 134 677 250 1015 369 342 120 685 211 1040 319 331 101 692-19 1038 49 272 53 549 67 827 99 298 34 596 75 897 49 293-26 592-54 873-173 306-129 527-393 684-688 172-323 220-676 355-1008 106-261 76-557 94-836 16-255 1-511 25-762 27-289 43-576 23-861-20-295-25-593-142-885-102-255-110-542-165-811-67-325-6-696-165-983-163-294-238-563-497-811-234-225-478-484-802-492h-23z">
      <text:p/>
     </draw:path>
     <draw:line draw:style-name="gr13" draw:text-style-name="P24" draw:layer="layout" svg:x1="9.252cm" svg:y1="6.852cm" svg:x2="7.128cm" svg:y2="7.502cm">
@@ -11249,7 +11256,7 @@
       <draw:handle draw:handle-position="$0 top" draw:handle-range-x-minimum="0" draw:handle-range-x-maximum="21600"/>
      </draw:enhanced-geometry>
     </draw:custom-shape>
-    <draw:path draw:style-name="gr62" draw:text-style-name="P24" xml:id="id110" draw:id="id110" draw:layer="layout" svg:width="2.842cm" svg:height="0.985cm" draw:transform="skewX (0.853640537150426) rotate (-2.04220975775857) translate (10.2431031507529cm 15.7515437561296cm)" svg:viewBox="0 0 2843 986" svg:d="M2843 986c-1335-1-2843-986-2843-986">
+    <draw:path draw:style-name="gr62" draw:text-style-name="P24" xml:id="id110" draw:id="id110" draw:layer="layout" svg:width="2.842cm" svg:height="0.985cm" draw:transform="skewX (0.853640537150426) rotate (-2.04220975775856) translate (10.2431031507529cm 15.7515437561296cm)" svg:viewBox="0 0 2843 986" svg:d="M2843 986c-1335-1-2843-986-2843-986">
      <text:p/>
     </draw:path>
     <draw:path draw:style-name="gr62" draw:text-style-name="P24" xml:id="id111" draw:id="id111" draw:layer="layout" svg:width="2.842cm" svg:height="0.985cm" draw:transform="skewX (-0.853466004225227) rotate (-1.09938289583123) translate (8.94003084232955cm 13.1946770811905cm)" svg:viewBox="0 0 2843 986" svg:d="M0 986c1335-1 2843-986 2843-986">
@@ -11431,16 +11438,16 @@
       </text:list>
      </draw:text-box>
     </draw:frame>
-    <draw:custom-shape draw:style-name="gr3" draw:text-style-name="P20" draw:layer="layout" svg:width="7.873cm" svg:height="7.227cm" svg:x="10.064cm" svg:y="12.044cm">
+    <draw:custom-shape draw:style-name="gr3" draw:text-style-name="P20" draw:layer="layout" svg:width="7.873cm" svg:height="7.227cm" svg:x="5.164cm" svg:y="12.044cm">
      <text:p/>
      <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
     </draw:custom-shape>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P26" draw:layer="layout" svg:width="6.209cm" svg:height="0.878cm" svg:x="10.896cm" svg:y="17.792cm">
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P26" draw:layer="layout" svg:width="6.209cm" svg:height="0.878cm" svg:x="5.996cm" svg:y="17.792cm">
      <draw:text-box>
-      <text:p text:style-name="P25"><text:span text:style-name="T5">github.com/Freechains</text:span></text:p>
+      <text:p text:style-name="P25"><text:span text:style-name="T5">g</text:span><text:span text:style-name="T5">i</text:span><text:span text:style-name="T5">t</text:span><text:span text:style-name="T5">h</text:span><text:span text:style-name="T5">u</text:span><text:span text:style-name="T5">b</text:span><text:span text:style-name="T5">.</text:span><text:span text:style-name="T5">c</text:span><text:span text:style-name="T5">o</text:span><text:span text:style-name="T5">m</text:span><text:span text:style-name="T5">/</text:span><text:span text:style-name="T5">F</text:span><text:span text:style-name="T5">r</text:span><text:span text:style-name="T5">e</text:span><text:span text:style-name="T5">e</text:span><text:span text:style-name="T5">c</text:span><text:span text:style-name="T5">h</text:span><text:span text:style-name="T5">a</text:span><text:span text:style-name="T5">i</text:span><text:span text:style-name="T5">n</text:span><text:span text:style-name="T5">s</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="5.08cm" svg:height="5.08cm" svg:x="11.46cm" svg:y="12.558cm">
+    <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="5.08cm" svg:height="5.08cm" svg:x="6.56cm" svg:y="12.558cm">
      <draw:image draw:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABmJLR0QA/wD/AP+gvaeTAAAg
        AElEQVR4nOzdd3hU17U3/u8+Z2bUUEENFQRI9CbRey+2MTa4G0ycOL3fOD1O7vu797n3vdeJ
@@ -12133,6 +12140,154 @@
       <text:p/>
      </draw:image>
     </draw:frame>
+    <draw:frame draw:style-name="gr63" draw:text-style-name="P25" draw:layer="layout" svg:width="7.227cm" svg:height="7.227cm" svg:x="16.542cm" svg:y="11.944cm">
+     <draw:image draw:mime-type="image/png">
+      <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABIMAAASDCAIAAABlaWigAAAABmJLR0QA/wD/AP+gvaeTAAAd
+       eklEQVR4nOzbwXHcurZA0Y9fPVcqHYJDtzNQKooAb9ZTV1F9N6jjtRLgIQmgtYultff+PwAA
+       AEL/f3oAAACAf44SAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACA
+       mhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAA
+       gJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEA
+       AICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkx
+       AACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgp
+       MQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACo
+       KTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAA
+       qCkxAACA2uP0AO+31jo9AvxX9t6nR3izeRs2e0fzHt08FsNl8866zLzFAC/zTgbfxAAAAGpK
+       DAAAoKbEAAAAakoMAACgpsQAAABqSgwAAKCmxAAAAGpKDAAAoKbEAAAAakoMAACgpsQAAABq
+       SgwAAKCmxAAAAGpKDAAAoKbEAAAAakoMAACgpsQAAABqSgwAAKCmxAAAAGpKDAAAoKbEAAAA
+       akoMAACgpsQAAABqSgwAAKCmxAAAAGpKDAAAoKbEAAAAakoMAACgpsQAAABqSgwAAKCmxAAA
+       AGpKDAAAoKbEAAAAakoMAACg9jg9AHBHa63TI7zZ3ru5UPbosjuax/LmxYYFDlJi3/Lx8fF8
+       Pk9PwUmfn59fX1+npwCAmr+C8FfQNymxb3k+n79//z49BSf9+vXrz58/p6cAgJq/gvBX0Df5
+       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
+       RU5ErkJggg==
+      </office:binary-data>
+      <text:p/>
+     </draw:image>
+    </draw:frame>
     <anim:par presentation:node-type="timing-root">
      <anim:seq presentation:node-type="main-sequence">
       <anim:par smil:begin="next">
@@ -12237,19 +12392,16 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page11" draw:style-name="dp4" draw:master-page-name="oranssi_5f_" presentation:presentation-page-layout-name="AL1T32">
-    <draw:custom-shape draw:style-name="gr3" draw:text-style-name="P20" draw:layer="layout" svg:width="7.873cm" svg:height="7.227cm" svg:x="10.064cm" svg:y="7.744cm">
-     <text:p/>
-     <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
-    </draw:custom-shape>
+    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr18" draw:text-style-name="P21" draw:layer="layout" svg:width="25.199cm" svg:height="5.209cm" svg:x="1.501cm" svg:y="1.19cm" presentation:class="subtitle" presentation:user-transformed="true">
      <draw:text-box>
-      <text:p><text:span text:style-name="T2">Peer-to-Peer Permissionless </text:span><text:span text:style-name="T2">Consensus via Reputation</text:span></text:p>
+      <text:p><text:span text:style-name="T2">Peer-to-Peer Permissionless Consensus via Reputation</text:span></text:p>
      </draw:text-box>
     </draw:frame>
     <draw:frame draw:style-name="gr4" draw:text-style-name="P23" draw:layer="layout" svg:width="16.589cm" svg:height="3.03cm" svg:x="2.745cm" svg:y="16.272cm">
      <draw:text-box>
-      <text:p text:style-name="P22"><text:span text:style-name="T3">Francisco Sant&apos;Anna</text:span></text:p>
-      <text:p text:style-name="P22"><text:span text:style-name="T4">francisco@ime.uerj.br</text:span></text:p>
+      <text:p text:style-name="P22"><text:span text:style-name="T3">Francisco </text:span><text:span text:style-name="T3">Sant&apos;Anna</text:span></text:p>
+      <text:p text:style-name="P22"><text:span text:style-name="T4">francisco@ime.uerj.</text:span><text:span text:style-name="T4">br</text:span></text:p>
       <text:p text:style-name="P22"><text:span text:style-name="T4"><text:s text:c="2"/></text:span><text:span text:style-name="T4">@_fsantanna</text:span></text:p>
      </draw:text-box>
     </draw:frame>
@@ -12558,7 +12710,186 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="5.08cm" svg:height="5.08cm" svg:x="11.533cm" svg:y="8.358cm">
+    <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="0.635cm" svg:height="0.635cm" svg:x="3.023cm" svg:y="18.542cm">
+     <draw:image draw:mime-type="image/png">
+      <office:binary-data>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
+      </office:binary-data>
+      <text:p/>
+     </draw:image>
+    </draw:frame>
+    <draw:custom-shape draw:style-name="gr3" draw:text-style-name="P20" draw:layer="layout" svg:width="7.873cm" svg:height="7.227cm" svg:x="6.364cm" svg:y="7.245cm">
+     <text:p/>
+     <draw:enhanced-geometry svg:viewBox="0 0 21600 21600" draw:type="rectangle" draw:enhanced-path="M 0 0 L 21600 0 21600 21600 0 21600 0 0 Z N"/>
+    </draw:custom-shape>
+    <draw:frame draw:style-name="gr6" draw:text-style-name="P26" draw:layer="layout" svg:width="6.209cm" svg:height="0.878cm" svg:x="7.196cm" svg:y="12.993cm">
+     <draw:text-box>
+      <text:p text:style-name="P25"><text:span text:style-name="T5">github.com/Freechains</text:span></text:p>
+     </draw:text-box>
+    </draw:frame>
+    <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="5.08cm" svg:height="5.08cm" svg:x="7.76cm" svg:y="7.759cm">
      <draw:image draw:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABmJLR0QA/wD/AP+gvaeTAAAg
        AElEQVR4nOzdd3hU17U3/u8+Z2bUUEENFQRI9CbRey+2MTa4G0ycOL3fOD1O7vu797n3vdeJ
@@ -13251,177 +13582,150 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr6" draw:text-style-name="P26" draw:layer="layout" svg:width="6.209cm" svg:height="0.878cm" svg:x="10.916cm" svg:y="13.492cm">
-     <draw:text-box>
-      <text:p text:style-name="P25"><text:span text:style-name="T5">github.com/Freechains</text:span></text:p>
-     </draw:text-box>
-    </draw:frame>
-    <draw:frame draw:style-name="gr5" draw:text-style-name="P24" draw:layer="layout" svg:width="0.635cm" svg:height="0.635cm" svg:x="3.023cm" svg:y="18.542cm">
+    <draw:frame draw:style-name="gr63" draw:text-style-name="P25" draw:layer="layout" svg:width="7.227cm" svg:height="7.227cm" svg:x="14.442cm" svg:y="7.345cm">
      <draw:image draw:mime-type="image/png">
-      <office:binary-data>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
+      <office:binary-data>iVBORw0KGgoAAAANSUhEUgAABIMAAASDCAIAAABlaWigAAAABmJLR0QA/wD/AP+gvaeTAAAd
+       eklEQVR4nOzbwXHcurZA0Y9fPVcqHYJDtzNQKooAb9ZTV1F9N6jjtRLgIQmgtYultff+PwAA
+       AEL/f3oAAACAf44SAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACA
+       mhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAA
+       gJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEA
+       AICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkx
+       AACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgp
+       MQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACo
+       KTEAAICaEgMAAKgpMQAAgJoSAwAAqCkxAACAmhIDAACoKTEAAICaEgMAAKgpMQAAgJoSAwAA
+       qCkxAACA2uP0AO+31jo9AvxX9t6nR3izeRs2e0fzHt08FsNl8866zLzFAC/zTgbfxAAAAGpK
+       DAAAoKbEAAAAakoMAACgpsQAAABqSgwAAKCmxAAAAGpKDAAAoKbEAAAAakoMAACgpsQAAABq
+       SgwAAKCmxAAAAGpKDAAAoKbEAAAAakoMAACgpsQAAABqSgwAAKCmxAAAAGpKDAAAoKbEAAAA
+       akoMAACgpsQAAABqSgwAAKCmxAAAAGpKDAAAoKbEAAAAakoMAACgpsQAAABqSgwAAKCmxAAA
+       AGpKDAAAoKbEAAAAakoMAACg9jg9AHBHa63TI7zZ3ru5UPbosjuax/LmxYYFDlJi3/Lx8fF8
+       Pk9PwUmfn59fX1+npwCAmr+C8FfQNymxb3k+n79//z49BSf9+vXrz58/p6cAgJq/gvBX0Df5
+       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
+       RU5ErkJggg==
       </office:binary-data>
       <text:p/>
      </draw:image>
@@ -13459,16 +13763,16 @@
      <draw:text-box>
       <text:list text:style-name="L3">
        <text:list-item>
-        <text:p text:style-name="P43"><text:span text:style-name="T13">They enforce a unique timeline to preserve value and immunity to attacks</text:span></text:p>
+        <text:p text:style-name="P43"><text:span text:style-name="T13">They enforce a unique timeline to preserve value </text:span><text:span text:style-name="T13">and immunity to attacks</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P43"><text:span text:style-name="T13">They lean towards concentration of power due to scaling effects</text:span></text:p>
+        <text:p text:style-name="P43"><text:span text:style-name="T13">They lean towards concentration of power due to </text:span><text:span text:style-name="T13">scaling effects</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P43"><text:span text:style-name="T13">They impose an external economic cost to use the protocol</text:span></text:p>
+        <text:p text:style-name="P43"><text:span text:style-name="T13">They impose an external economic cost to use </text:span><text:span text:style-name="T13">the protocol</text:span></text:p>
        </text:list-item>
        <text:list-item>
-        <text:p text:style-name="P43"><text:span text:style-name="T13">They rely exclusively on objective rules to reach consensus</text:span></text:p>
+        <text:p text:style-name="P43"><text:span text:style-name="T13">They rely exclusively on objective rules to reach </text:span><text:span text:style-name="T13">consensus</text:span></text:p>
        </text:list-item>
       </text:list>
      </draw:text-box>
@@ -14246,7 +14550,6 @@
     </presentation:notes>
    </draw:page>
    <draw:page draw:name="page17" draw:style-name="dp4" draw:master-page-name="oranssi_5f_" presentation:presentation-page-layout-name="AL2T1">
-    <office:forms form:automatic-focus="false" form:apply-design-mode="false"/>
     <draw:frame presentation:style-name="pr24" draw:text-style-name="P35" draw:layer="layout" svg:width="25.199cm" svg:height="3.506cm" svg:x="1.4cm" svg:y="0.837cm" presentation:class="title" presentation:user-transformed="true">
      <draw:text-box>
       <text:p>Conclusion</text:p>
